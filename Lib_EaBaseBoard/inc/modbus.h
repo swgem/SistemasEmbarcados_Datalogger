@@ -98,7 +98,7 @@ typedef struct _Master_Read_ST {
 typedef struct _Master_WSC_ST {
     uint8_t id;	
     uint8_t command_type;
-    uint16_t initial_address;
+    uint16_t address;
     uint16_t data;
     uint16_t CRC;
 } Master_WSC_ST;
@@ -134,7 +134,7 @@ typedef struct _Slave_WMR_ST {
 
 typedef struct _Modbus_Response_ST {
     uint8_t response_type;
-    uint8_t data[8];
+    uint16_t data;
 } Modbus_Response_ST;
 
 typedef enum _EState{
@@ -146,7 +146,8 @@ typedef enum _EState{
  DECLARACAO DE FUNCOES EXTERNAVEIS
 *****************************************************************************/
 
-extern Modbus_Response_ST wait_master_comm();
+extern uint8_t modbus_waitMasterRequest();
+extern Modbus_Response_ST modbus_respondMaster(void * data);
 
 #endif
 

@@ -58,14 +58,29 @@ typedef struct Sensors {
 } ST_Sensors;
 
 /******************************************************************************************
- DECLARACAO DE VARIAVEIS GLOBAIS
+ VARIAVEIS LOCAIS
 ******************************************************************************************/
 
 //// SISTEMA
 
 static uint32_t msTicks = 0;
-uint8_t system_state = SYSTEM_RUNNING; // SYSTEM_PAUSED ou SYSTEM_RUNNING
 
+//// APLICACAO
+
+// retorna o led a acender a partir do endereco requisitado
+static uint16_t addr2led[4] = {0x1, 0x2, 0x8000, 0x4000};
+
+// mapas utilizados pelo modbus
+static uint8_t coil_map[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+static int16_t register_map[5] = {1, 2, -1, 3, -4};
+
+/******************************************************************************************
+ VARIAVEIS EXTERNAVEIS
+******************************************************************************************/
+
+//// SISTEMA
+
+uint8_t system_state = SYSTEM_RUNNING; // SYSTEM_PAUSED ou SYSTEM_RUNNING
 uint8_t flag_pause = 0;
 uint32_t debounce_count = 0;
 
@@ -250,11 +265,46 @@ int main (void) {
     
     osKernelStart();
     
+    //// TRATA COMUNICACAO MODBUS
+
+    uint8_t commant_type;
+    Modbus_Response_ST modbus_response;
+
     while (TRUE) {
-        wait_master_comm();
+        commant_type = modbus_waitMasterRequest();
+
+        switch (commant_type) {
+            case COMMAND_RM_COIL:
+                modbus_respondMaster((void *)coil_map);
+                break;
+            case COMMAND_RM_REG:
+                modbus_respondMaster((void *)register_map);
+                break;
+            case COMMAND_WS_COIL:
+                modbus_response = modbus_respondMaster(NULL);
+                if (modbus_response.response_type != MODBUS_FAILED) {
+                    uint8_t coil_state = (uint8_t)modbus_response.data;
+                    uint8_t coil_address = (uint8_t)(modbus_response.data >> 0x8);
+                    if (coil_state == 0x0) {
+                        pca9532_setLeds(0x0000, addr2led[coil_address]);
+                        coil_map[coil_address] = 0;
+                    }
+                    else {
+                        pca9532_setLeds(addr2led[coil_address], 0x0000);
+                        coil_map[coil_address] = 1;
+                    }
+                }
+                break;    
+            case COMMAND_WM_REG:
+                modbus_response = modbus_respondMaster(NULL);
+                if (modbus_response.response_type != MODBUS_FAILED) {
+                    sample_period = modbus_response.data;
+                }
+                break;
+            default:
+                break;
+        }
     }
-    
-    return 0;
 }
 
 /******************************************************************************************
