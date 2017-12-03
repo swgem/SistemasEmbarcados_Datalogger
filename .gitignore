@@ -1,0 +1,11 @@
+# IAR Settings
+**/settings/
+
+# IAR Debug exe
+**/Exe/*.sim
+
+# IAR Debug Obj
+**/Obj/*.pbd
+**/Obj/*.pbd.*
+**/Obj/*.pbi
+**/Obj/*.pbi.*

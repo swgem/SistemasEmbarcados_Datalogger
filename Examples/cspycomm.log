@@ -1,0 +1,37 @@
+Logging started @ 2017-08-29 20:04
+DLL Compiled: Dec  9 2015 12:49:14
+
+Firmware: J-Link ARM Lite V8 compiled Oct 29 2014 09:03:16
+Hardware: V8.00
+S/N: 238002736
+OEM: IAR  returns O.K. (0268ms, 0269ms total)
+T1AD0 000:269 JLINK_ExecCommand("ProjectFile = D:\cesar\Dropbox\aula\sistemas embarcados\labs\cmsis_rtos_iar_750_lpcxpresso1343_examples_aso_fig\Examples\settings\Examples_Debug.jlink", ...)  returns 0x00 (0001ms, 0270ms total)
+T1AD0 000:270 JLINK_ExecCommand("device = LPC1343", ...)Device "LPC1343" selected.  returns 0x00 (0001ms, 0271ms total)
+T1AD0 000:271 JLINK_GetDLLVersion()  returns 51004 (0000ms, 0271ms total)
+T1AD0 000:271 JLINK_GetCompileDateTime() (0000ms, 0271ms total)
+T1AD0 000:271 JLINK_GetFirmwareString(...) (0000ms, 0271ms total)
+T1AD0 000:271 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0004ms, 0275ms total)
+T1AD0 000:275 JLINK_SelectDeviceFamily(3) (0000ms, 0275ms total)
+T1AD0 000:275 JLINK_SetSpeed(1000) (0001ms, 0276ms total)
+T1AD0 000:276 JLINK_ExecCommand("SetResetType = 0", ...)  returns 0x00 (0000ms, 0276ms total)
+T1AD0 000:276 JLINK_ExecCommand("SetResetPulseLen = 200", ...)  returns 0x14 (0000ms, 0276ms total)
+T1AD0 000:276 JLINK_SetResetDelay(0) (0000ms, 0276ms total)
+T1AD0 000:276 JLINK_ResetPullsRESET(ON) (0000ms, 0276ms total)
+T1AD0 000:276 JLINK_Reset() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>JLINK_Halt() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns 0x00 (0274ms, 0824ms total)
+T1AD0 000:824 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0273ms, 1097ms total)
+T1AD0 001:097 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 001:372 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 001:646 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 001:920 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 002:194 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 002:469 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 002:743 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 003:017 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 003:292 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 003:567 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 003:841 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 004:115 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 004:389 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0274ms, 1098ms total)
+T1AD0 004:664 JLINK_IsHalted() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>  returns ERROR (0275ms, 1099ms total)
+
+Closed
