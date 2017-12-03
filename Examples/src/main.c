@@ -86,25 +86,12 @@ int file_offset;
 int written_bytes = 0;
 
 /******************************************************************************************
- ROTINAS DE TIMER
-******************************************************************************************/
-
-// void msTicksTimer(void const *n) {
-//     msTicks++;
-//     return;
-// }
-
-
-// osTimerDef(msTimer, msTicksTimer);
-
-
-/******************************************************************************************
  MUTEXES, SEMAFOROS E MAIL QUEUES
 ******************************************************************************************/
 
-osMailQId  mail_DataProcess;
-osMailQId  mail_DataSD;
-osMailQId  mail_DataOLED;
+osMailQId mail_DataProcess;
+osMailQId mail_DataSD;
+osMailQId mail_DataOLED;
 
 osMutexId mutex_Spi;
 
@@ -148,39 +135,21 @@ osThreadDef(task_PauseRoutine, osPriorityNormal, 1, 0);
  INTERRUPÇÕES
 ******************************************************************************************/
 
-void SSP0_IRQHandler(void) 
-{
+void SSP0_IRQHandler(void) {
   uint32_t regValue;
 
   regValue = LPC_SSP0->MIS;
-  if ( regValue & SSPMIS_RORMIS )   /* Receive overrun interrupt */
-  {
-    //interruptOverRunStat++;
-    LPC_SSP0->ICR = SSPICR_RORIC;       /* clear interrupt */
-  }
-  if ( regValue & SSPMIS_RTMIS )    /* Receive timeout interrupt */
-  {
-    //interruptRxTimeoutStat++;
-    LPC_SSP0->ICR = SSPICR_RTIC;        /* clear interrupt */
-  }
-
-  /* please be aware that, in main and ISR, CurrentRxIndex and CurrentTxIndex
-  are shared as global variables. It may create some race condition that main
-  and ISR manipulate these variables at the same time. SSPSR_BSY checking (polling)
-  in both main and ISR could prevent this kind of race condition */
-  if ( regValue & SSPMIS_RXMIS )    /* Rx at least half full */
-  {
-    //interruptRxStat++;      /* receive until it's empty */      
-  }
+  if (regValue & SSPMIS_RORMIS) { LPC_SSP0->ICR = SSPICR_RORIC; }
+  if (regValue & SSPMIS_RTMIS) { LPC_SSP0->ICR = SSPICR_RTIC; }
+  if (regValue & SSPMIS_RXMIS) {  }
   return;
 }
 
-void PIOINT2_IRQHandler(void)
-{
+void PIOINT2_IRQHandler(void) {
     static uint32_t debounce_count = 0;
-    //flag_pause = 1;
+    
     if (msTicks + 300 > debounce_count) {
-         //caso tenha sido pressionado por 300ms,
+        // caso tenha sido pressionado por 300ms,
         // alterna entre os estados running/paused, caso off permanece
         system_state = (system_state == SYSTEM_RUNNING)? SYSTEM_PAUSED :
                        (system_state == SYSTEM_PAUSED)? SYSTEM_RUNNING :
@@ -189,7 +158,6 @@ void PIOINT2_IRQHandler(void)
         if (system_state == SYSTEM_PAUSED) {
             osSignalSet(t_PauseRoutine, 0x1);
         }
-
         debounce_count = msTicks;
     }
     GPIOIntClear(PORT2, 9);
@@ -216,7 +184,6 @@ int main (void) {
     light_init();
     acc_init();
     rgb_init(); 
-    //temp_init(&getTicks);
     light_enable();
     light_setRange(LIGHT_RANGE_4000);
 
@@ -236,7 +203,7 @@ int main (void) {
 
     //// LEITURA DO ARQUIVO DE CONFIGURACAO
 
-    fr = f_open(&fil_config, "configP.txt", FA_READ);
+    fr = f_open(&fil_config, "config.txt", FA_READ);
     if (fr != FR_OK) return 1;
 
     uint8_t buffer[100];
@@ -244,7 +211,7 @@ int main (void) {
     char* config = (char *) buffer;
 
     config_read(config, &sample_period, display_header);
-    
+
     f_close(&fil_config);
 
     //// IMPRESSAO DA BASE NA TELA
@@ -288,30 +255,26 @@ int main (void) {
  DEFINIÇÃO DE FUNCOES
 ******************************************************************************************/
 
-static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
-{
+static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base) {
     static const char* pAscii = "0123456789abcdefghijklmnopqrstuvwxyz";
     int pos = 0;
     int tmpValue = value;
 
     // the buffer must not be null and at least have a length of 2 to handle one
     // digit and null-terminator
-    if (pBuf == NULL || len < 2)
-    {
+    if (pBuf == NULL || len < 2) {
         return;
     }
 
     // a valid base cannot be less than 2 or larger than 36
     // a base value of 2 means binary representation. A value of 1 would mean only zeros
     // a base larger than 36 can only be used if a larger alphabet were used.
-    if (base < 2 || base > 36)
-    {
+    if (base < 2 || base > 36) {
         return;
     }
 
     // negative value
-    if (value < 0)
-    {
+    if (value < 0) {
         tmpValue = -tmpValue;
         value    = -value;
         pBuf[pos++] = '-';
@@ -324,8 +287,7 @@ static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
     } while(tmpValue > 0);
 
 
-    if (pos > len)
-    {
+    if (pos > len) {
         // the len parameter is invalid.
         return;
     }
@@ -338,7 +300,6 @@ static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
     } while(value > 0);
 
     return;
-
 }
 
 static void config_read(char* config, int* sample_period, char* display_header) {
@@ -395,6 +356,7 @@ void task_ProcessData(void const *argument) {
     ST_Sensors processed_sensors;
     uint8_t index = 0;
     uint32_t count = 0;
+
     while (TRUE) {
         if (system_state == SYSTEM_RUNNING) {
             osEvent evt = osMailGet(mail_DataProcess, osWaitForever);
@@ -433,6 +395,7 @@ void task_ProcessData(void const *argument) {
 void task_PrintOLED(void const *argument) {
     uint8_t buffer[10];
     ST_Sensors processed_sensors;
+
     while (TRUE) {
         if (system_state == SYSTEM_RUNNING) {
             osEvent evt = osMailGet(mail_DataOLED, osWaitForever);
@@ -483,10 +446,8 @@ void task_PrintOLED(void const *argument) {
 void task_PrintSD(void const *argument) {
     osMutexWait(mutex_Spi, osWaitForever);
 
-    fr = f_open(&fil_data, "data.txt", FA_CREATE_ALWAYS | FA_WRITE); 
-    //if (fr != FR_OK) return 1;
+    fr = f_open(&fil_data, "data.txt", FA_CREATE_ALWAYS | FA_WRITE);
     file_offset = 0;
-    //int oldpos = 0;
     
     written_bytes = f_printf(&fil_data, "<%dmseg>\r\n", sample_period);
     file_offset = file_offset + written_bytes;
@@ -529,6 +490,7 @@ void task_PrintSD(void const *argument) {
 }
 
 void task_PauseRoutine(void const *argument) {
+    
     while (TRUE) {
         if (system_state == SYSTEM_PAUSED) {
             pca9532_setLeds(0x0001,0xFFFF);
