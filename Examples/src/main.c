@@ -18,6 +18,8 @@
 #include "spi.h"
 #include "i2c.h"
 
+#include "modbus.h"
+
 #include "diskio.h"
 #include "ff.h"
 
@@ -132,7 +134,7 @@ osThreadDef(task_ProcessData, osPriorityNormal, 1, 0);
 osThreadDef(task_PauseRoutine, osPriorityNormal, 1, 0);
 
 /******************************************************************************************
- INTERRUPÇÕES
+ INTERRUPCOES
 ******************************************************************************************/
 
 void SSP0_IRQHandler(void) {
@@ -175,11 +177,13 @@ int main (void) {
     osKernelInitialize();
     SystemInit();
     SystemCoreClockUpdate();
-
     GPIOInit();
+    I2CInit(I2CMASTER, 0);
+    UARTInit(9600);
     SSPInit(); 
     joystick_init();
-    I2CInit((uint32_t)I2CMASTER, 0x3c);
+    // PODE DAR COCO ESSE I2C COMENTADO
+    // I2CInit((uint32_t)I2CMASTER, 0x3c);
     oled_init();
     light_init();
     acc_init();
@@ -246,7 +250,9 @@ int main (void) {
     
     osKernelStart();
     
-    osDelay(osWaitForever);
+    while (TRUE) {
+        wait_master_comm();
+    }
     
     return 0;
 }
