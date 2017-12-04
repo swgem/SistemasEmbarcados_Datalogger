@@ -6,54 +6,63 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm3.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\inc\integer.h</file>
-      <file>$PROJ_DIR$\..\Device\NXP\LPC13xx\Include\system_LPC13xx.h</file>
-      <file>$PROJ_DIR$\src\ff.c</file>
-      <file>$PROJ_DIR$\..\Lib_MCU\inc\mcu_regs.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-      <file>$PROJ_DIR$\src\mmc.c</file>
-      <file>$PROJ_DIR$\..\Lib_MCU\inc\type.h</file>
-      <file>$PROJ_DIR$\..\Lib_MCU\inc\gpio.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\ff.o</file>
-      <file>$PROJ_DIR$\inc\diskio.h</file>
-      <file>$PROJ_DIR$\inc\ffconf.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
       <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmInstr.h</file>
-      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\Lib_MCU\inc\mcu_regs.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
       <file>$PROJ_DIR$\Debug\Obj\mmc.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
       <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-      <file>$PROJ_DIR$\..\Lib_MCU\inc\spi.h</file>
-      <file>$PROJ_DIR$\..\Device\NXP\LPC13xx\Include\LPC13xx.h</file>
+      <file>$PROJ_DIR$\inc\integer.h</file>
       <file>$PROJ_DIR$\Debug\Obj\mmc.__cstat.et</file>
       <file>$PROJ_DIR$\Debug\Exe\Lib_Mmc_Fat.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-      <file>$PROJ_DIR$\inc\ff.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\inc\ffconf.h</file>
+      <file>$PROJ_DIR$\..\Lib_MCU\inc\spi.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\Lib_MCU\inc\gpio.h</file>
+      <file>$PROJ_DIR$\inc\ff.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm3.h</file>
+      <file>$PROJ_DIR$\..\Device\NXP\LPC13xx\Include\system_LPC13xx.h</file>
+      <file>$PROJ_DIR$\..\Lib_MCU\inc\type.h</file>
       <file>$PROJ_DIR$\Debug\Obj\ff.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\Device\NXP\LPC13xx\Include\LPC13xx.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\src\ff.c</file>
+      <file>$PROJ_DIR$\src\mmc.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\ff.o</file>
+      <file>$PROJ_DIR$\inc\diskio.h</file>
     </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>IARCHIVE</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+    </file>
     <file>
       <name>$PROJ_DIR$\src\ff.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 10</file>
+          <file> 29</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 30</file>
+          <file> 21</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 26 2 12 11</file>
+          <file> 17 7 11 30</file>
         </tool>
       </inputs>
     </file>
@@ -62,28 +71,19 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 16</file>
+          <file> 4</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 23</file>
+          <file> 8</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 13 29 25 17 28 6 1 18 19 11 2 8 9 21 5 22 0 14 20 27 15 3</file>
+          <file> 24 14 25 22 13 15 1 26 5 30 7 20 16 12 2 23 18 0 6 3 10 19</file>
         </tool>
       </inputs>
-    </file>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>IARCHIVE</name>
-          <file> 24</file>
-        </tool>
-      </outputs>
     </file>
   </configuration>
   <configuration>
