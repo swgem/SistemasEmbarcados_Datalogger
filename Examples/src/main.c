@@ -270,41 +270,41 @@ int main (void) {
     uint8_t commant_type;
     Modbus_Response_ST modbus_response;
 
-    // while (TRUE) {
-    //     commant_type = modbus_waitMasterRequest();
+    while (TRUE) {
+        commant_type = modbus_waitMasterRequest();
 
-    //     switch (commant_type) {
-    //         case COMMAND_RM_COIL:
-    //             modbus_respondMaster((void *)coil_map);
-    //             break;
-    //         case COMMAND_RM_REG:
-    //             modbus_respondMaster((void *)register_map);
-    //             break;
-    //         case COMMAND_WS_COIL:
-    //             modbus_response = modbus_respondMaster(NULL);
-    //             if (modbus_response.response_type != MODBUS_FAILED) {
-    //                 uint8_t coil_state = (uint8_t)modbus_response.data;
-    //                 uint8_t coil_address = (uint8_t)(modbus_response.data >> 0x8);
-    //                 if (coil_state == 0x0) {
-    //                     pca9532_setLeds(0x0000, addr2led[coil_address]);
-    //                     coil_map[coil_address] = 0;
-    //                 }
-    //                 else {
-    //                     pca9532_setLeds(addr2led[coil_address], 0x0000);
-    //                     coil_map[coil_address] = 1;
-    //                 }
-    //             }
-    //             break;    
-    //         case COMMAND_WM_REG:
-    //             modbus_response = modbus_respondMaster(NULL);
-    //             if (modbus_response.response_type != MODBUS_FAILED) {
-    //                 sample_period = modbus_response.data;
-    //             }
-    //             break;
-    //         default:
-    //             break;
-    //     }
-    // }
+        switch (commant_type) {
+            case COMMAND_RM_COIL:
+                modbus_respondMaster((void *)coil_map);
+                break;
+            case COMMAND_RM_REG:
+                modbus_respondMaster((void *)register_map);
+                break;
+            case COMMAND_WS_COIL:
+                modbus_response = modbus_respondMaster(NULL);
+                if (modbus_response.response_type != MODBUS_FAILED) {
+                    uint8_t coil_state = (uint8_t)modbus_response.data;
+                    uint8_t coil_address = (uint8_t)(modbus_response.data >> 0x8);
+                    if (coil_state == 0x0) {
+                        pca9532_setLeds(0x0000, addr2led[coil_address]);
+                        coil_map[coil_address] = 0;
+                    }
+                    else {
+                        pca9532_setLeds(addr2led[coil_address], 0x0000);
+                        coil_map[coil_address] = 1;
+                    }
+                }
+                break;    
+            case COMMAND_WM_REG:
+                modbus_response = modbus_respondMaster(NULL);
+                if (modbus_response.response_type != MODBUS_FAILED) {
+                    sample_period = modbus_response.data;
+                }
+                break;
+            default:
+                break;
+        }
+    }
 
     osDelay(osWaitForever);
 }
@@ -467,7 +467,7 @@ void task_PrintOLED(void const *argument) {
             
             osMutexWait(mutex_Spi, osWaitForever);
 
-            pca9532_setLeds(0x0080,0xFFFF);
+            // pca9532_setLeds(0x0080,0xFFFF);
 
             intToString(sample_period, buffer,10,10);
             oled_fillRect((1+9*7),55, 95, 62, OLED_COLOR_WHITE);
@@ -493,7 +493,7 @@ void task_PrintOLED(void const *argument) {
             oled_fillRect((1+9*6),41, 90, 48, OLED_COLOR_WHITE);
             oled_putString((1+9*6),41, buffer, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
-            pca9532_setLeds(0x0000,0xFFFF);
+            // pca9532_setLeds(0x0000,0xFFFF);
 
             osMutexRelease(mutex_Spi);
             osDelay(PRINT_PERIOD);
@@ -529,7 +529,7 @@ void task_PrintSD(void const *argument) {
             
             osMutexWait(mutex_Spi, osWaitForever);
 
-            pca9532_setLeds(0x0100,0xFFFF);
+            // pca9532_setLeds(0x0100,0xFFFF);
 
             fr = f_open(&fil_data, "data.txt", FA_WRITE);
             res = f_lseek(&fil_data, fil_data.fsize);
@@ -540,7 +540,7 @@ void task_PrintSD(void const *argument) {
                                        processed_sensors.lux);
             }
             f_close(&fil_data);
-            pca9532_setLeds(0x0000,0xFFFF);
+            // pca9532_setLeds(0x0000,0xFFFF);
 
             osMutexRelease(mutex_Spi);
         }
@@ -554,7 +554,7 @@ void task_PauseRoutine(void const *argument) {
     
     while (TRUE) {
         if (system_state == SYSTEM_PAUSED) {
-            pca9532_setLeds(0x0001,0xFFFF);
+            // pca9532_setLeds(0x0001,0xFFFF);
         }
         else if (system_state == SYSTEM_RUNNING) {
             // acorda todas threads de modo normal antes de dormir
