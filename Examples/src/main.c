@@ -270,41 +270,43 @@ int main (void) {
     uint8_t commant_type;
     Modbus_Response_ST modbus_response;
 
-    while (TRUE) {
-        commant_type = modbus_waitMasterRequest();
+    // while (TRUE) {
+    //     commant_type = modbus_waitMasterRequest();
 
-        switch (commant_type) {
-            case COMMAND_RM_COIL:
-                modbus_respondMaster((void *)coil_map);
-                break;
-            case COMMAND_RM_REG:
-                modbus_respondMaster((void *)register_map);
-                break;
-            case COMMAND_WS_COIL:
-                modbus_response = modbus_respondMaster(NULL);
-                if (modbus_response.response_type != MODBUS_FAILED) {
-                    uint8_t coil_state = (uint8_t)modbus_response.data;
-                    uint8_t coil_address = (uint8_t)(modbus_response.data >> 0x8);
-                    if (coil_state == 0x0) {
-                        pca9532_setLeds(0x0000, addr2led[coil_address]);
-                        coil_map[coil_address] = 0;
-                    }
-                    else {
-                        pca9532_setLeds(addr2led[coil_address], 0x0000);
-                        coil_map[coil_address] = 1;
-                    }
-                }
-                break;    
-            case COMMAND_WM_REG:
-                modbus_response = modbus_respondMaster(NULL);
-                if (modbus_response.response_type != MODBUS_FAILED) {
-                    sample_period = modbus_response.data;
-                }
-                break;
-            default:
-                break;
-        }
-    }
+    //     switch (commant_type) {
+    //         case COMMAND_RM_COIL:
+    //             modbus_respondMaster((void *)coil_map);
+    //             break;
+    //         case COMMAND_RM_REG:
+    //             modbus_respondMaster((void *)register_map);
+    //             break;
+    //         case COMMAND_WS_COIL:
+    //             modbus_response = modbus_respondMaster(NULL);
+    //             if (modbus_response.response_type != MODBUS_FAILED) {
+    //                 uint8_t coil_state = (uint8_t)modbus_response.data;
+    //                 uint8_t coil_address = (uint8_t)(modbus_response.data >> 0x8);
+    //                 if (coil_state == 0x0) {
+    //                     pca9532_setLeds(0x0000, addr2led[coil_address]);
+    //                     coil_map[coil_address] = 0;
+    //                 }
+    //                 else {
+    //                     pca9532_setLeds(addr2led[coil_address], 0x0000);
+    //                     coil_map[coil_address] = 1;
+    //                 }
+    //             }
+    //             break;    
+    //         case COMMAND_WM_REG:
+    //             modbus_response = modbus_respondMaster(NULL);
+    //             if (modbus_response.response_type != MODBUS_FAILED) {
+    //                 sample_period = modbus_response.data;
+    //             }
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    // }
+
+    osDelay(osWaitForever);
 }
 
 /******************************************************************************************
@@ -434,12 +436,15 @@ void task_ProcessData(void const *argument) {
             
             
             ST_Sensors *data_OLED = (ST_Sensors*)osMailAlloc(mail_DataOLED, 0);
-            *data_OLED = processed_sensors;
             
+            if (data_OLED != NULL) {
+                *data_OLED = processed_sensors;
+                osMailPut(mail_DataOLED, data_OLED);
+            }
+
             ST_Sensors *data_SD = (ST_Sensors*)osMailAlloc(mail_DataSD, osWaitForever);
             *data_SD = processed_sensors;
             
-            if (data_OLED != NULL) osMailPut(mail_DataOLED, data_OLED);
             osMailPut(mail_DataSD, data_SD);
         }
         else if (system_state == SYSTEM_PAUSED) {
