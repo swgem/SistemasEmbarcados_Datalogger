@@ -149,7 +149,7 @@ osThreadDef(task_ReadSensors, osPriorityNormal, 1, 0);
 osThreadDef(task_PrintOLED, osPriorityNormal, 1, 0);
 osThreadDef(task_ProcessData, osPriorityNormal, 1, 0);
 osThreadDef(task_PauseRoutine, osPriorityNormal, 1, 0);
-osThreadDef(task_Modbus, osPriorityLow, 1, 0);
+osThreadDef(task_Modbus, osPriorityNormal, 1, 0);
 
 /******************************************************************************************
  INTERRUPCOES
