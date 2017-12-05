@@ -149,7 +149,7 @@ osThreadDef(task_ReadSensors, osPriorityNormal, 1, 0);
 osThreadDef(task_PrintOLED, osPriorityNormal, 1, 0);
 osThreadDef(task_ProcessData, osPriorityNormal, 1, 0);
 osThreadDef(task_PauseRoutine, osPriorityNormal, 1, 0);
-osThreadDef(task_Modbus, osPriorityNormal, 1, 0);
+osThreadDef(task_Modbus, osPriorityLow, 1, 0);
 
 /******************************************************************************************
  INTERRUPCOES
@@ -268,6 +268,42 @@ int main (void) {
     t_Modbus = osThreadCreate(osThread(task_Modbus), NULL);
     
     osKernelStart();
+
+    //// ROTINA DE LEITURA DO JOYSTICK
+
+//    osDelay(osWaitForever);
+    
+    while (TRUE) {
+        switch (joystick_read()) {
+            case JOYSTICK_CENTER:
+                coil_map[4] = 1;
+                break;
+            case JOYSTICK_UP:
+                coil_map[5] = 1;
+                osDelay(200);
+                break;
+            case JOYSTICK_DOWN:
+                coil_map[6] = 1;
+                osDelay(200);
+                break;
+            case JOYSTICK_LEFT:
+                coil_map[7] = 1;
+                osDelay(200);
+                break;
+            case JOYSTICK_RIGHT:
+                coil_map[8] = 1;
+                osDelay(200);
+                break;
+            default:
+                coil_map[4] = 0;
+                coil_map[5] = 0;
+                coil_map[6] = 0;
+                coil_map[7] = 0;
+                coil_map[8] = 0;
+                osDelay(80);
+                break;
+        }
+    }
 
     osDelay(osWaitForever);
 }
