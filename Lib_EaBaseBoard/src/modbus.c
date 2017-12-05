@@ -23,8 +23,8 @@ static uint8_t uart_buffer[20];
 
 
 // DEVEM SER ALTERADOS:
-static uint8_t * coil_map;
-static int16_t * register_map;
+static uint8_t * modbus_coil_map;
+static int16_t * modbus_register_map;
 
 /*****************************************************************************
  Declaracao de funcoes locais
@@ -101,7 +101,7 @@ static void respond_RM_Coil(uint8_t * response_type) {
     }
 
     for (uint16_t i = 0; i < master_data.points; i++) {
-        data |= (coil_map[master_data.initial_address + i] << i);
+        data |= (modbus_coil_map[master_data.initial_address + i] << i);
     }
 
     Slave_RMC_ST slave_buffer = { .id = 0x01,
@@ -136,7 +136,7 @@ static void respond_RM_Reg(uint8_t * response_type) {
     }
 
     for (uint16_t i = 0; i < master_data.points; i++) {
-        data[i] = register_map[master_data.initial_address + i];
+        data[i] = modbus_register_map[master_data.initial_address + i];
         buffer[3 + 2*i] = *((uint8_t *)&data[i] + 1);
         buffer[3 + 2*i + 1] = *((uint8_t *)&data[i]);
     }
@@ -161,7 +161,7 @@ static void respond_WS_Coil(uint8_t * response_type, uint16_t * data) {
     master_data.id = uart_buffer[0];
     master_data.command_type = uart_buffer[1];
     master_data.address = switch_lsbmsb(*((uint16_t *)&uart_buffer[2]));
-    master_data.data = switch_lsbmsb(*((uint16_t *)&uart_buffer[4]));
+    master_data.data = *((uint16_t *)&uart_buffer[4]);
     master_data.CRC = *((uint16_t *)&uart_buffer[6]);
 
     // verifica codigo de erro
@@ -234,10 +234,10 @@ uint8_t modbus_waitMasterRequest() {
 Modbus_Response_ST modbus_respondMaster(void * data) {
     switch (uart_buffer[1]) {
         case COMMAND_RM_COIL:
-            coil_map = (uint8_t *)data;
+            modbus_coil_map = (uint8_t *)data;
             break;
         case COMMAND_RM_REG:
-            register_map = (int16_t *)data;
+            modbus_register_map = (int16_t *)data;
             break;
         default:
             break;
