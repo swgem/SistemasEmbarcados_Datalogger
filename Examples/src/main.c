@@ -200,8 +200,6 @@ int main (void) {
     UARTInit(9600);
     SSPInit(); 
     joystick_init();
-    // PODE DAR COCO ESSE I2C COMENTADO
-    // I2CInit((uint32_t)I2CMASTER, 0x3c);
     oled_init();
     light_init();
     acc_init();
@@ -211,6 +209,8 @@ int main (void) {
 
     GPIOIntEnable(PORT2, 9);
     GPIOSetInterrupt(PORT2, 9, 0, 0, 1);
+
+    pca9532_setLeds(0x0000,0xFFFF);
 
     //// INICIALIZACAO DO FATFS
 
@@ -466,7 +466,7 @@ void task_PrintOLED(void const *argument) {
             
             osMutexWait(mutex_Spi, osWaitForever);
 
-            // pca9532_setLeds(0x0080,0xFFFF);
+            pca9532_setLeds(0x0080,0x3FFC);
 
             intToString(sample_period, buffer,10,10);
             oled_fillRect((1+9*7),55, 95, 62, OLED_COLOR_WHITE);
@@ -492,7 +492,7 @@ void task_PrintOLED(void const *argument) {
             oled_fillRect((1+9*6),41, 90, 48, OLED_COLOR_WHITE);
             oled_putString((1+9*6),41, buffer, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
-            // pca9532_setLeds(0x0000,0xFFFF);
+            pca9532_setLeds(0x0000,0x3FFC);
 
             osMutexRelease(mutex_Spi);
             osDelay(PRINT_PERIOD);
@@ -528,7 +528,7 @@ void task_PrintSD(void const *argument) {
             
             osMutexWait(mutex_Spi, osWaitForever);
 
-            // pca9532_setLeds(0x0100,0xFFFF);
+            pca9532_setLeds(0x0100,0x3FFC);
 
             fr = f_open(&fil_data, "data.txt", FA_WRITE);
             res = f_lseek(&fil_data, fil_data.fsize);
@@ -539,7 +539,7 @@ void task_PrintSD(void const *argument) {
                                        processed_sensors.lux);
             }
             f_close(&fil_data);
-            // pca9532_setLeds(0x0000,0xFFFF);
+            pca9532_setLeds(0x0000,0x3FFC);
 
             osMutexRelease(mutex_Spi);
         }
@@ -553,7 +553,7 @@ void task_PauseRoutine(void const *argument) {
     
     while (TRUE) {
         if (system_state == SYSTEM_PAUSED) {
-            // pca9532_setLeds(0x0001,0xFFFF);
+            pca9532_setLeds(0x0010,0x3FFC);
         }
         else if (system_state == SYSTEM_RUNNING) {
             // acorda todas threads de modo normal antes de dormir
@@ -601,6 +601,20 @@ void task_Modbus(void const *argument) {
                 modbus_response = modbus_respondMaster(NULL);
                 if (modbus_response.response_type != MODBUS_FAILED) {
                     sample_period = modbus_response.data;
+
+                    osMutexWait(mutex_Spi, osWaitForever);
+                    // grava o header do data.txt
+                    fr = f_open(&fil_data, "data.txt", FA_CREATE_ALWAYS | FA_WRITE);
+                    if (fr != FR_OK) fr = f_open(&fil_data, "data.txt", FA_CREATE_ALWAYS | FA_WRITE);
+                    written_bytes = f_printf(&fil_data, "<%dmseg>\r\n", sample_period);
+                    f_close(&fil_data);
+                    // grava a nova configuração no configP.txt
+                    fr = f_open(&fil_config, "config.txt", FA_WRITE);
+                    if (fr != FR_OK) fr = f_open(&fil_config, "config.txt", FA_WRITE);
+                    written_bytes = f_printf(&fil_config, "%d\r\nCEP S11", sample_period);
+                    f_close(&fil_config);
+                    osMutexRelease(mutex_Spi);
+                    osDelay(200);
                 }
                 break;
             default:
