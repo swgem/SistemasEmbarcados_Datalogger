@@ -53,7 +53,6 @@ typedef struct Sensors {
     int8_t x;
     int8_t y;
     int8_t z;
-    //uint32_t temp;
     uint32_t lux;
 } ST_Sensors;
 
@@ -223,7 +222,7 @@ int main (void) {
     res = f_opendir(&dir, "/");
     if (res != FR_OK) return 1;
 
-    //// LEITURA DO ARQUIVO DE CONFIGURACAO
+    // LEITURA DO ARQUIVO DE CONFIGURACAO
 
     fr = f_open(&fil_config, "config.txt", FA_READ);
     if (fr != FR_OK) return 1;
@@ -433,6 +432,13 @@ void task_ProcessData(void const *argument) {
                                    sensors_buf[2].lux + sensors_buf[3].lux) / 4;
             processed_sensors.count = count;
             
+            // atualiza mapa de registradores
+            
+            register_map[0] = (int16_t)processed_sensors.x;
+            register_map[1] = (int16_t)processed_sensors.y;
+            register_map[2] = (int16_t)processed_sensors.z;
+            register_map[3] = (int16_t)processed_sensors.lux;
+            register_map[4] = (int16_t)sample_period;
             
             ST_Sensors *data_OLED = (ST_Sensors*)osMailAlloc(mail_DataOLED, 0);
             
