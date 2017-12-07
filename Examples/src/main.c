@@ -36,7 +36,7 @@
 /******************************************************************************************
  MACROS
 ******************************************************************************************/
-
+#define GANTT_SD                1
 #define SYSTEM_PAUSED           1
 #define SYSTEM_RUNNING          2
 
@@ -64,6 +64,8 @@ typedef struct Sensors {
 
 static uint32_t msTicks = 0;
 
+static const uint32_t ticksfactor = 72000;
+
 //// APLICACAO
 
 // retorna o led a acender a partir do endereco requisitado
@@ -90,9 +92,11 @@ char display_header[15];
 
 //// FATFS
 
+
 FATFS fatFs;
 FIL fil_data;
 FIL fil_config;
+FIL fil_gantt;
 FRESULT fr;
 DSTATUS stat;
 BYTE res;
@@ -190,7 +194,7 @@ void PIOINT2_IRQHandler(void) {
 int main (void) {
     
     //// INICIALIZACOES
-
+    uint32_t time;
     osKernelInitialize();
     SystemInit();
     SystemCoreClockUpdate();
@@ -258,6 +262,14 @@ int main (void) {
     //// INICIALIZACAO DAS THREADS E TIMERS
 
     osDelay(500);
+    
+    #ifdef GANTT_SD
+    fr = f_open(&fil_gantt, "gantt.txt",FA_WRITE | FA_CREATE_ALWAYS );
+    f_printf(&fil_gantt,"gantt\r\n");
+    f_printf(&fil_gantt,"    title A Gantt Diagram\r\n");
+    f_printf(&fil_gantt,"    dateFormat x\r\n"); //unix timestamp
+    f_close(&fil_gantt);
+    #endif
 
     t_PrintSD = osThreadCreate(osThread(task_PrintSD), NULL);
     t_ReadSensors = osThreadCreate(osThread(task_ReadSensors), NULL);
@@ -273,6 +285,7 @@ int main (void) {
 //    osDelay(osWaitForever);
     
     while (TRUE) {
+        time = osKernelSysTick()/ticksfactor;
         switch (joystick_read()) {
             case JOYSTICK_CENTER:
                 coil_map[4] = 1;
@@ -382,6 +395,7 @@ void task_ReadSensors(void const *argument) {
     int8_t xaux;
     int8_t yaux;
     int8_t zaux;
+    uint32_t time;
     
     acc_read(&xaux, &yaux, &zaux);
     xoff = 0 - xaux;
@@ -389,8 +403,10 @@ void task_ReadSensors(void const *argument) {
     zoff = 64 - zaux;
 
     while (TRUE) {
+        
         if (system_state == SYSTEM_RUNNING) {        
             ST_Sensors *data = (ST_Sensors*)osMailAlloc(mail_DataProcess, osWaitForever);
+            time = osKernelSysTick()/ticksfactor;
             acc_read(&data->x, &data->y, &data->z);
             data->x = data->x + xoff;
             data->y = data->y + yoff;
@@ -399,8 +415,15 @@ void task_ReadSensors(void const *argument) {
             data->lux = light_read();
 
             osMailPut(mail_DataProcess, data);
+            #ifdef GANTT_SD
+            fr = f_open(&fil_gantt, "gantt.txt", FA_WRITE);
+            f_lseek(&fil_gantt,fil_gantt.fsize);
+            f_printf(&fil_gantt," ReadSensors :  %d, %d\r\n", (int)time, (int)osKernelSysTick()/ticksfactor);
+            f_close(&fil_gantt);
+            #endif
             osDelay(sample_period);
         }
+        
         else if (system_state == SYSTEM_PAUSED) {
             osSignalWait(0x1, osWaitForever); // entra em estado vegetativo ate receber sinal
         }
@@ -410,13 +433,16 @@ void task_ReadSensors(void const *argument) {
 void task_ProcessData(void const *argument) {
     ST_Sensors sensors_buf[4];
     ST_Sensors processed_sensors;
+    uint32_t time;
     uint8_t index = 0;
     uint32_t count = 0;
 
     while (TRUE) {
+  
         if (system_state == SYSTEM_RUNNING) {
             osEvent evt = osMailGet(mail_DataProcess, osWaitForever);
             ST_Sensors *data = (ST_Sensors*)evt.value.p;
+            time = osKernelSysTick()/ticksfactor;
             sensors_buf[index++ % 4] = *data;
             osMailFree(mail_DataProcess, data);
             
@@ -455,17 +481,26 @@ void task_ProcessData(void const *argument) {
         else if (system_state == SYSTEM_PAUSED) {
             osSignalWait(0x1, osWaitForever); // entra em estado vegetativo ate receber sinal
         }
+        #ifdef GANTT_SD
+        fr = f_open(&fil_gantt, "gantt.txt", FA_WRITE);
+        f_lseek(&fil_gantt,fil_gantt.fsize);
+        f_printf(&fil_gantt," ProcessData :  %d, %d\r\n", (int)time, (int)osKernelSysTick()/ticksfactor);
+        f_close(&fil_gantt);
+        #endif
     }
 }
 
 void task_PrintOLED(void const *argument) {
     uint8_t buffer[10];
     ST_Sensors processed_sensors;
-
+    uint32_t time;
+    
     while (TRUE) {
+        
         if (system_state == SYSTEM_RUNNING) {
             osEvent evt = osMailGet(mail_DataOLED, osWaitForever);
             ST_Sensors *data = (ST_Sensors*)evt.value.p;
+            time = osKernelSysTick()/ticksfactor;
             processed_sensors = *data;
             osMailFree(mail_DataOLED, data);
             
@@ -501,17 +536,24 @@ void task_PrintOLED(void const *argument) {
             pca9532_setLeds(0x0000,0x3FFC);
 
             osMutexRelease(mutex_Spi);
+            #ifdef GANTT_SD
+            fr = f_open(&fil_gantt, "gantt.txt", FA_WRITE);
+            f_lseek(&fil_gantt,fil_gantt.fsize);
+            f_printf(&fil_gantt," PrintOLED :  %d, %d\r\n", (int)time, (int)osKernelSysTick()/ticksfactor);
+            f_close(&fil_gantt);
+            #endif
             osDelay(PRINT_PERIOD);
         }
         else if (system_state == SYSTEM_PAUSED) {
             osSignalWait(0x1, osWaitForever); // entra em estado vegetativo ate receber sinal
         }
+
     }
 }
 
 void task_PrintSD(void const *argument) {
     osMutexWait(mutex_Spi, osWaitForever);
-
+    uint32_t time;
     fr = f_open(&fil_data, "data.txt", FA_CREATE_ALWAYS | FA_WRITE);
     file_offset = 0;
     
@@ -522,13 +564,14 @@ void task_PrintSD(void const *argument) {
     osMutexRelease(mutex_Spi);
     
     ST_Sensors processed_sensors;
-    
     while(1) {
+        
         if (system_state == SYSTEM_RUNNING) {
                
             osEvent evt = osMailGet(mail_DataSD, osWaitForever);
 
             ST_Sensors *data = (ST_Sensors*)evt.value.p;
+            time = osKernelSysTick()/ticksfactor;
             processed_sensors = *data;
             osMailFree(mail_DataSD, data);
             
@@ -552,11 +595,16 @@ void task_PrintSD(void const *argument) {
         else if (system_state == SYSTEM_PAUSED) {
             osSignalWait(0x1, osWaitForever); // entra em estado vegetativo ate receber sinal
         }
+        #ifdef GANTT_SD
+        fr = f_open(&fil_gantt, "gantt.txt", FA_WRITE);
+        f_lseek(&fil_gantt,fil_gantt.fsize);
+        f_printf(&fil_gantt," PrintSD :  %d, %d\r\n", (int)time, (int)osKernelSysTick()/ticksfactor);
+        f_close(&fil_gantt);
+        #endif
     }
 }
 
 void task_PauseRoutine(void const *argument) {
-    
     while (TRUE) {
         if (system_state == SYSTEM_PAUSED) {
             pca9532_setLeds(0x0010,0x3FFC);
@@ -577,10 +625,12 @@ void task_PauseRoutine(void const *argument) {
 void task_Modbus(void const *argument) {
     uint8_t commant_type;
     Modbus_Response_ST modbus_response;
+    uint32_t time;
 
     while (TRUE) {
+        
         commant_type = modbus_waitMasterRequest();
-
+        time = osKernelSysTick()/ticksfactor;
         switch (commant_type) {
             case COMMAND_RM_COIL:
                 modbus_respondMaster((void *)coil_map);
@@ -626,5 +676,11 @@ void task_Modbus(void const *argument) {
             default:
                 break;
         }
+        #ifdef GANTT_SD
+        fr = f_open(&fil_gantt, "gantt.txt", FA_WRITE);
+        f_lseek(&fil_gantt,fil_gantt.fsize);
+        f_printf(&fil_gantt," TaskMODBUS :  %d, %d\r\n", (int)time, (int)osKernelSysTick()/ticksfactor);
+        f_close(&fil_gantt);
+        #endif
     }
 }
