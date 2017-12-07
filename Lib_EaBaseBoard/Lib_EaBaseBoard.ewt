@@ -2116,6 +2116,9 @@
     <name>$PROJ_DIR$\src\light.c</name>
   </file>
   <file>
+    <name>$PROJ_DIR$\src\modbus.c</name>
+  </file>
+  <file>
     <name>$PROJ_DIR$\src\oled.c</name>
   </file>
   <file>

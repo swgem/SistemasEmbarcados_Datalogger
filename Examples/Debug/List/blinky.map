@@ -1,49 +1,45 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.50.2.10312/W32 for ARM                01/Dec/2017  17:19:25
+# IAR ELF Linker V7.50.2.10312/W32 for ARM                07/Dec/2017  19:22:47
 # Copyright 2007-2015 IAR Systems AB.
 #
 #    Output file  =  
-#        D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\Debug\Exe\blinky.out.tmp
+#        D:\UTFPR\Períodos\8º Período\Sistemas Embarcados\Laboratórios\tarefa04
+#        - datalogger modbus\Codigo\LAB04\Examples\Debug\Exe\blinky.out.tmp
 #    Map file     =  
-#        D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\Debug\List\blinky.map
+#        D:\UTFPR\Períodos\8º Período\Sistemas Embarcados\Laboratórios\tarefa04
+#        - datalogger modbus\Codigo\LAB04\Examples\Debug\List\blinky.map
 #    Command line =  
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Lib_EaBaseBoard\Debug\Exe\Lib_EaBaseBoard.a"
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Lib_MCU\Debug\Exe\Lib_MCU.a" "D:\UTFPR\Documentos\8º
+#        "D:\UTFPR\Períodos\8º Período\Sistemas
+#        Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Lib_EaBaseBoard\Debug\Exe\Lib_EaBaseBoard.a"
+#        "D:\UTFPR\Períodos\8º Período\Sistemas
+#        Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Lib_MCU\Debug\Exe\Lib_MCU.a" "D:\UTFPR\Períodos\8º
 #        Período\Sistemas Embarcados\Laboratórios\tarefa04 - datalogger
-#        modbus\Codigo - O OUTRO TA
-#        BUGADO\LAB04\Lib_Mmc_Fat\Debug\Exe\Lib_Mmc_Fat.a"
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\Debug\Obj\main.o" "D:\UTFPR\Documentos\8º
+#        modbus\Codigo\LAB04\Lib_Mmc_Fat\Debug\Exe\Lib_Mmc_Fat.a"
+#        "D:\UTFPR\Períodos\8º Período\Sistemas
+#        Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Examples\Debug\Obj\main.o" "D:\UTFPR\Períodos\8º
 #        Período\Sistemas Embarcados\Laboratórios\tarefa04 - datalogger
-#        modbus\Codigo - O OUTRO TA BUGADO\LAB04\RTOS\RTX\LIB\IAR\RTX_CM3.a"
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\Debug\Obj\RTX_Conf_CM.o"
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\Debug\Obj\startup_LPC13xx.o"
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\Debug\Obj\system_LPC13xx.o" -o
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\Debug\Exe\blinky.out.tmp" --map
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\Debug\List\blinky.map" --config
-#        "D:\UTFPR\Documentos\8º Período\Sistemas
-#        Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO
-#        TA BUGADO\LAB04\Examples\src\lpc1343.icf" --semihosting --entry
+#        modbus\Codigo\LAB04\RTOS\RTX\LIB\IAR\RTX_CM3.a" "D:\UTFPR\Períodos\8º
+#        Período\Sistemas Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Examples\Debug\Obj\RTX_Conf_CM.o"
+#        "D:\UTFPR\Períodos\8º Período\Sistemas
+#        Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Examples\Debug\Obj\startup_LPC13xx.o"
+#        "D:\UTFPR\Períodos\8º Período\Sistemas
+#        Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Examples\Debug\Obj\system_LPC13xx.o" -o
+#        "D:\UTFPR\Períodos\8º Período\Sistemas
+#        Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Examples\Debug\Exe\blinky.out.tmp" --map
+#        "D:\UTFPR\Períodos\8º Período\Sistemas
+#        Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Examples\Debug\List\blinky.map" --config
+#        "D:\UTFPR\Períodos\8º Período\Sistemas
+#        Embarcados\Laboratórios\tarefa04 - datalogger
+#        modbus\Codigo\LAB04\Examples\src\lpc1343.icf" --semihosting --entry
 #        __iar_program_start --vfe
 #
 ###############################################################################
@@ -74,223 +70,249 @@ __dlib_dynamic_initialization = normal
     .intvec           ro code  0x00000000   0x128  startup_LPC13xx.o [1]
                              - 0x00000128   0x128
 
-"P1", part 1 of 2:                          0x168
+"P1", part 1 of 2:                          0x180
   .rodata             const    0x00000128     0x2  RTX_Conf_CM.o [1]
   .text               ro code  0x0000012c   0x13c  nossoSSP.o [4]
   .rodata             const    0x00000268     0x2  RTX_Conf_CM.o [1]
-  .text               ro code  0x0000026c     0x6  rt_Time.o [6]
+  .text               ro code  0x0000026a     0x8  atoi.o [7]
   .rodata             const    0x00000272     0x2  RTX_Conf_CM.o [1]
-  .text               ro code  0x00000274     0x8  atoi.o [7]
-  .text               ro code  0x0000027c     0xc  errno.o [7]
-  .text               ro code  0x00000288     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x0000028c     0x4  startup_LPC13xx.o [1]
-                             - 0x00000290   0x168
+  .rodata             const    0x00000274     0x1  RTX_Conf_CM.o [1]
+  .rodata             const    0x00000275     0x1  RTX_Conf_CM.o [1]
+  .rodata             const    0x00000276     0x0  zero_init3.o [8]
+  .rodata             const    0x00000276     0x0  copy_init3.o [8]
+  .text               ro code  0x00000276     0x4  low_level_init.o [7]
+  .text               ro code  0x0000027c    0x28  data_init.o [8]
+  .text               ro code  0x000002a4     0x4  exit.o [7]
+                             - 0x000002a8   0x180
 
 "P3":                                         0x4
   .crp                ro code  0x000002fc     0x4  startup_LPC13xx.o [1]
                              - 0x00000300     0x4
 
-"P1", part 2 of 2:                         0x5efc
+"P1", part 2 of 2:                         0x6cd0
   .text               ro code  0x00000300  0x1782  ff.o [5]
   .text               ro code  0x00001a84   0x774  mmc.o [5]
-  .text               ro code  0x000021f8   0x5d4  gpio.o [4]
-  .text               ro code  0x000027cc   0x8f0  rt_CMSIS.o [6]
-  .text               ro code  0x000030bc    0x8e  rt_Memory.o [6]
-  .text               ro code  0x0000314c   0x484  rt_Task.o [6]
-  .text               ro code  0x000035d0   0x2a4  rt_Mailbox.o [6]
-  .text               ro code  0x00003874    0x48  RTX_Conf_CM.o [1]
-  .text               ro code  0x000038bc   0x110  rt_Event.o [6]
-  .text               ro code  0x000039cc   0x150  rt_Mutex.o [6]
-  .text               ro code  0x00003b1c    0x98  rt_MemBox.o [6]
-  .text               ro code  0x00003bb4   0x23c  rt_List.o [6]
-  .text               ro code  0x00003df0   0x128  rt_System.o [6]
-  .text               ro code  0x00003f18    0xec  HAL_CM.o [6]
-  .text               ro code  0x00004004   0x124  HAL_CM3.o [6]
-  .text               ro code  0x00004128    0x5c  rt_Robin.o [6]
-  .text               ro code  0x00004184     0x4  low_level_init.o [7]
-  .text               ro code  0x00004188    0x28  data_init.o [8]
-  .text               ro code  0x000041b0     0x4  exit.o [7]
-  .text               ro code  0x000041b4    0x34  rt_Semaphore.o [6]
-  .text               ro code  0x000041e8     0x6  ABImemclr4.o [8]
-  .rodata             const    0x000041ee     0x1  RTX_Conf_CM.o [1]
-  .rodata             const    0x000041ef     0x1  RTX_Conf_CM.o [1]
-  .text               ro code  0x000041f0     0xa  cexit.o [8]
-  .text               ro code  0x000041fc    0x32  ABImemset48.o [8]
-  .text               ro code  0x00004230    0x14  exit.o [9]
-  .text               ro code  0x00004244   0x860  main.o [1]
-  .text               ro code  0x00004aa4   0x2a8  system_LPC13xx.o [1]
-  .text               ro code  0x00004d4c    0x36  joystick.o [3]
-  .text               ro code  0x00004d84   0x32c  i2c.o [4]
-  .text               ro code  0x000050b0   0x4e2  oled.o [3]
-  .text               ro code  0x00005594   0x10c  light.o [3]
-  .text               ro code  0x000056a0    0xb8  acc.o [3]
-  .text               ro code  0x00005758    0x58  rgb.o [3]
-  .text               ro code  0x000057b0    0xf0  pca9532.o [3]
-  .text               ro code  0x000058a0    0x66  ABImemset.o [8]
-  .text               ro code  0x00005908   0x198  xstoul.o [7]
-  .text               ro code  0x00005aa0    0x14  isxxx.o [7]
-  .text               ro code  0x00005ab4    0x14  tolower.o [7]
-  .text               ro code  0x00005ac8    0x58  memchr.o [8]
-  .text               ro code  0x00005b20    0x18  setlocale.o [7]
-  .text               ro code  0x00005b38    0x14  xlocale_c.o [7]
-  .text               ro code  0x00005b4c     0xc  xlocale_c.o [7]
-  .text               ro code  0x00005b58     0x2  xtls.o [7]
-  .rodata             const    0x00005b5c   0x300  font5x7.o [3]
-  .rodata             const    0x00005e5c    0x80  ff.o [5]
-  .text               ro code  0x00005edc    0x40  zero_init3.o [8]
-  .text               ro code  0x00005f1c    0x2c  copy_init3.o [8]
-  .rodata             const    0x00005f48    0x28  main.o [1]
-  .iar.init_table     const    0x00005f70    0x24  - Linker created -
-  .text               ro code  0x00005f94    0x20  startup_LPC13xx.o [1]
-  .rodata             const    0x00005fb4    0x18  main.o [1]
-  .rodata             const    0x00005fcc    0x10  main.o [1]
-  .rodata             const    0x00005fdc    0x10  main.o [1]
-  .rodata             const    0x00005fec    0x10  main.o [1]
-  .rodata             const    0x00005ffc    0x10  main.o [1]
-  .rodata             const    0x0000600c    0x10  main.o [1]
-  .rodata             const    0x0000601c    0x10  RTX_Conf_CM.o [1]
-  .rodata             const    0x0000602c    0x10  RTX_Conf_CM.o [1]
-  .rodata             const    0x0000603c     0xc  main.o [1]
-  .rodata             const    0x00006048     0xc  main.o [1]
-  .rodata             const    0x00006054     0xc  main.o [1]
-  .rodata             const    0x00006060     0xc  main.o [1]
-  .rodata             const    0x0000606c     0xc  main.o [1]
-  .rodata             const    0x00006078     0xc  main.o [1]
-  .rodata             const    0x00006084     0xc  main.o [1]
-  .rodata             const    0x00006090     0xc  main.o [1]
-  .rodata             const    0x0000609c     0xc  main.o [1]
-  .rodata             const    0x000060a8     0xc  main.o [1]
-  .rodata             const    0x000060b4     0xc  ff.o [5]
-  .text               ro code  0x000060c0     0xc  cstartup_M.o [8]
-  .rodata             const    0x000060cc     0x8  RTX_Conf_CM.o [1]
-  .rodata             const    0x000060d4     0x8  oled.o [3]
-  .rodata             const    0x000060dc     0x4  main.o [1]
-  .rodata             const    0x000060e0     0x4  RTX_Conf_CM.o [1]
-  .rodata             const    0x000060e4     0x4  RTX_Conf_CM.o [1]
-  .rodata             const    0x000060e8     0x4  RTX_Conf_CM.o [1]
-  .rodata             const    0x000060ec     0x4  RTX_Conf_CM.o [1]
-  .rodata             const    0x000060f0     0x4  RTX_Conf_CM.o [1]
-  .rodata             const    0x000060f4     0x4  RTX_Conf_CM.o [1]
-  .rodata             const    0x000060f8     0x4  RTX_Conf_CM.o [1]
-  .rodata             const    0x000060fc     0x4  RTX_Conf_CM.o [1]
-  .rodata             const    0x00006100     0x4  RTX_Conf_CM.o [1]
-  .text               ro code  0x00006104     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006108     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x0000610c     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006110     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006114     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006118     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x0000611c     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006120     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006124     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006128     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x0000612c     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006130     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006134     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006138     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x0000613c     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006140     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006144     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006148     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x0000614c     0x4  startup_LPC13xx.o [1]
-  .text               ro code  0x00006150     0x4  startup_LPC13xx.o [1]
-  .text               const    0x00006154     0x4  SVC_Table.o [6]
-  .rodata             const    0x00006158     0x0  zero_init3.o [8]
-  .rodata             const    0x00006158     0x0  copy_init3.o [8]
-  Initializer bytes   const    0x00006158    0xa4  <for P2 s0>
-                             - 0x000061fc  0x5efc
+  .text               ro code  0x000021f8   0x624  gpio.o [4]
+  .text               ro code  0x0000281c   0xcb8  main.o [1]
+  .text               ro code  0x000034d4   0x948  rt_CMSIS.o [6]
+  .text               ro code  0x00003e1c   0x2a8  system_LPC13xx.o [1]
+  .text               ro code  0x000040c4   0x32c  i2c.o [4]
+  .text               ro code  0x000043f0   0x150  uart.o [4]
+  .text               ro code  0x00004540    0x90  joystick.o [3]
+  .text               ro code  0x000045d0   0x4e2  oled.o [3]
+  .text               ro code  0x00004ab4   0x10c  light.o [3]
+  .text               ro code  0x00004bc0    0xb8  acc.o [3]
+  .text               ro code  0x00004c78    0x58  rgb.o [3]
+  .text               ro code  0x00004cd0    0xf0  pca9532.o [3]
+  .text               ro code  0x00004dc0    0x76  ABImemcpy_unaligned.o [8]
+  .text               ro code  0x00004e38   0x3b0  modbus.o [3]
+  .text               ro code  0x000051e8    0x8e  rt_Memory.o [6]
+  .text               ro code  0x00005278   0x484  rt_Task.o [6]
+  .text               ro code  0x000056fc   0x140  rt_System.o [6]
+  .text               ro code  0x0000583c     0x6  rt_Time.o [6]
+  .text               ro code  0x00005844   0x2a4  rt_Mailbox.o [6]
+  .text               ro code  0x00005ae8    0x48  RTX_Conf_CM.o [1]
+  .text               ro code  0x00005b30   0x110  rt_Event.o [6]
+  .text               ro code  0x00005c40   0x150  rt_Mutex.o [6]
+  .text               ro code  0x00005d90    0x98  rt_MemBox.o [6]
+  .text               ro code  0x00005e28   0x23c  rt_List.o [6]
+  .text               ro code  0x00006064    0xec  HAL_CM.o [6]
+  .text               ro code  0x00006150    0x66  ABImemset.o [8]
+  .text               ro code  0x000061b8   0x198  xstoul.o [7]
+  .text               ro code  0x00006350   0x124  HAL_CM3.o [6]
+  .text               ro code  0x00006474    0x5c  rt_Robin.o [6]
+  .text               ro code  0x000064d0    0x34  rt_Semaphore.o [6]
+  .text               ro code  0x00006504     0x6  ABImemclr4.o [8]
+  .text               ro code  0x0000650a    0x14  isxxx.o [7]
+  .text               ro code  0x0000651e    0x14  tolower.o [7]
+  .text               ro code  0x00006534    0x58  memchr.o [8]
+  .text               ro code  0x0000658c     0xc  errno.o [7]
+  .text               ro code  0x00006598     0xa  cexit.o [8]
+  .text               ro code  0x000065a4    0x32  ABImemset48.o [8]
+  .text               ro code  0x000065d8    0x18  setlocale.o [7]
+  .text               ro code  0x000065f0    0x14  xlocale_c.o [7]
+  .text               ro code  0x00006604     0xc  xlocale_c.o [7]
+  .text               ro code  0x00006610     0x2  xtls.o [7]
+  .text               ro code  0x00006614    0x14  exit.o [9]
+  .rodata             const    0x00006628   0x300  font5x7.o [3]
+  .rodata             const    0x00006928   0x100  modbus.o [3]
+  .rodata             const    0x00006a28   0x100  modbus.o [3]
+  .rodata             const    0x00006b28    0x80  ff.o [5]
+  .text               ro code  0x00006ba8    0x40  zero_init3.o [8]
+  .text               ro code  0x00006be8    0x2c  copy_init3.o [8]
+  .rodata             const    0x00006c14    0x28  main.o [1]
+  .iar.init_table     const    0x00006c3c    0x24  - Linker created -
+  .text               ro code  0x00006c60    0x20  startup_LPC13xx.o [1]
+  .rodata             const    0x00006c80    0x1c  main.o [1]
+  .rodata             const    0x00006c9c    0x1c  main.o [1]
+  .rodata             const    0x00006cb8    0x1c  main.o [1]
+  .rodata             const    0x00006cd4    0x18  main.o [1]
+  .rodata             const    0x00006cec    0x18  main.o [1]
+  .rodata             const    0x00006d04    0x18  main.o [1]
+  .rodata             const    0x00006d1c    0x18  main.o [1]
+  .rodata             const    0x00006d34    0x14  main.o [1]
+  .rodata             const    0x00006d48    0x10  main.o [1]
+  .rodata             const    0x00006d58    0x10  main.o [1]
+  .rodata             const    0x00006d68    0x10  main.o [1]
+  .rodata             const    0x00006d78    0x10  main.o [1]
+  .rodata             const    0x00006d88    0x10  main.o [1]
+  .rodata             const    0x00006d98    0x10  main.o [1]
+  .rodata             const    0x00006da8    0x10  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006db8    0x10  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006dc8     0xc  main.o [1]
+  .rodata             const    0x00006dd4     0xc  main.o [1]
+  .rodata             const    0x00006de0     0xc  main.o [1]
+  .rodata             const    0x00006dec     0xc  main.o [1]
+  .rodata             const    0x00006df8     0xc  main.o [1]
+  .rodata             const    0x00006e04     0xc  main.o [1]
+  .rodata             const    0x00006e10     0xc  main.o [1]
+  .rodata             const    0x00006e1c     0xc  main.o [1]
+  .rodata             const    0x00006e28     0xc  main.o [1]
+  .rodata             const    0x00006e34     0xc  main.o [1]
+  .rodata             const    0x00006e40     0xc  main.o [1]
+  .rodata             const    0x00006e4c     0xc  main.o [1]
+  .rodata             const    0x00006e58     0xc  ff.o [5]
+  .text               ro code  0x00006e64     0xc  cstartup_M.o [8]
+  .rodata             const    0x00006e70     0x8  main.o [1]
+  .rodata             const    0x00006e78     0x8  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006e80     0x8  modbus.o [3]
+  .rodata             const    0x00006e88     0x8  oled.o [3]
+  .rodata             const    0x00006e90     0x4  main.o [1]
+  .rodata             const    0x00006e94     0x4  main.o [1]
+  .rodata             const    0x00006e98     0x4  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006e9c     0x4  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006ea0     0x4  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006ea4     0x4  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006ea8     0x4  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006eac     0x4  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006eb0     0x4  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006eb4     0x4  RTX_Conf_CM.o [1]
+  .rodata             const    0x00006eb8     0x4  RTX_Conf_CM.o [1]
+  .text               ro code  0x00006ebc     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ec0     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ec4     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ec8     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ecc     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ed0     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ed4     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ed8     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006edc     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ee0     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ee4     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ee8     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006eec     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ef0     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ef4     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006ef8     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006efc     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006f00     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006f04     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006f08     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006f0c     0x4  startup_LPC13xx.o [1]
+  .text               ro code  0x00006f10     0x4  startup_LPC13xx.o [1]
+  .text               const    0x00006f14     0x4  SVC_Table.o [6]
+  Initializer bytes   const    0x00006f18    0xb8  <for P2 s0>
+                             - 0x00006fd0  0x6cd0
 
-"P2", part 1 of 3:                           0xa4
-  P2 s0                        0x10000000    0xa4  <Init block>
+"P2", part 1 of 3:                           0xb8
+  P2 s0                        0x10000000    0xb8  <Init block>
     __DLIB_PERTHREAD  inited   0x10000000    0x74  setlocale.o [7]
-    .data             inited   0x10000074     0x8  main.o [1]
-    .data             inited   0x1000007c     0x8  main.o [1]
-    .data             inited   0x10000084     0x8  main.o [1]
-    .data             inited   0x1000008c     0x4  main.o [1]
-    .data             inited   0x10000090     0x4  system_LPC13xx.o [1]
-    .data             inited   0x10000094     0x4  light.o [3]
-    .data             inited   0x10000098     0x4  light.o [3]
-    __DLIB_PERTHREAD  inited   0x1000009c     0x4  errno.o [7]
-    .data             inited   0x100000a0     0x1  main.o [1]
-    .data             inited   0x100000a1     0x1  mmc.o [5]
-                             - 0x100000a4    0xa4
+    .data             inited   0x10000074     0xc  main.o [1]
+    .data             inited   0x10000080     0x8  main.o [1]
+    .data             inited   0x10000088     0x8  main.o [1]
+    .data             inited   0x10000090     0x8  main.o [1]
+    .data             inited   0x10000098     0x8  main.o [1]
+    .data             inited   0x100000a0     0x4  main.o [1]
+    .data             inited   0x100000a4     0x4  system_LPC13xx.o [1]
+    .data             inited   0x100000a8     0x4  light.o [3]
+    .data             inited   0x100000ac     0x4  light.o [3]
+    __DLIB_PERTHREAD  inited   0x100000b0     0x4  errno.o [7]
+    .data             inited   0x100000b4     0x1  main.o [1]
+    .data             inited   0x100000b5     0x1  mmc.o [5]
+                             - 0x100000b8    0xb8
 
-"P2", part 2 of 3:                         0x1864
-  .bss                zero     0x100000a8   0xa00  RTX_Conf_CM.o [1]
-  .bss                zero     0x10000aa8   0x390  RTX_Conf_CM.o [1]
-  .bss                zero     0x10000e38   0x300  oled.o [3]
-  .bss                zero     0x10001138   0x230  main.o [1]
-  .bss                zero     0x10001368   0x178  RTX_Conf_CM.o [1]
-  .bss                zero     0x100014e0    0x90  RTX_Conf_CM.o [1]
-  .bss                zero     0x10001570    0x84  RTX_Conf_CM.o [1]
-  .bss                zero     0x100015f4    0x6c  main.o [1]
-  .bss                zero     0x10001660    0x6c  main.o [1]
-  .bss                zero     0x100016cc    0x3c  rt_Task.o [6]
-  .bss                zero     0x10001708    0x30  main.o [1]
-  .bss                zero     0x10001738    0x30  main.o [1]
-  .bss                zero     0x10001768    0x24  main.o [1]
-  .bss                zero     0x1000178c    0x24  main.o [1]
-  .bss                zero     0x100017b0    0x1c  main.o [1]
-  .bss                zero     0x100017cc    0x1c  RTX_Conf_CM.o [1]
-  .bss                zero     0x100017e8    0x18  main.o [1]
-  .bss                zero     0x10001800    0x18  rt_List.o [6]
-  .bss                zero     0x10001818    0x18  rt_List.o [6]
-  .bss                zero     0x10001830    0x14  main.o [1]
-  .bss                zero     0x10001844    0x10  main.o [1]
-  .bss                zero     0x10001854    0x10  main.o [1]
-  .bss                zero     0x10001864     0x8  ff.o [5]
-  .bss                zero     0x1000186c     0x8  rt_System.o [6]
-  .bss                zero     0x10001874     0x8  rt_Robin.o [6]
-  .bss                zero     0x1000187c     0x4  main.o [1]
-  .bss                zero     0x10001880     0x4  main.o [1]
-  .bss                zero     0x10001884     0x4  main.o [1]
-  .bss                zero     0x10001888     0x4  main.o [1]
-  .bss                zero     0x1000188c     0x4  main.o [1]
-  .bss                zero     0x10001890     0x4  main.o [1]
-  .bss                zero     0x10001894     0x4  main.o [1]
-  .bss                zero     0x10001898     0x4  main.o [1]
-  .bss                zero     0x1000189c     0x4  main.o [1]
-  .bss                zero     0x100018a0     0x4  main.o [1]
-  .bss                zero     0x100018a4     0x4  main.o [1]
-  .bss                zero     0x100018a8     0x4  main.o [1]
-  .bss                zero     0x100018ac     0x4  main.o [1]
-  .bss                zero     0x100018b0     0x4  main.o [1]
-  .bss                zero     0x100018b4     0x4  main.o [1]
-  .bss                zero     0x100018b8     0x4  RTX_Conf_CM.o [1]
-  .bss                zero     0x100018bc     0x4  RTX_Conf_CM.o [1]
-  .bss                zero     0x100018c0     0x4  RTX_Conf_CM.o [1]
-  .bss                zero     0x100018c4     0x4  gpio.o [4]
-  .bss                zero     0x100018c8     0x4  gpio.o [4]
-  .bss                zero     0x100018cc     0x4  gpio.o [4]
-  .bss                zero     0x100018d0     0x4  gpio.o [4]
-  .bss                zero     0x100018d4     0x4  i2c.o [4]
-  .bss                zero     0x100018d8     0x4  i2c.o [4]
-  .bss                zero     0x100018dc     0x4  i2c.o [4]
-  .bss                zero     0x100018e0     0x4  i2c.o [4]
-  .bss                zero     0x100018e4     0x4  i2c.o [4]
-  .bss                zero     0x100018e8     0x4  i2c.o [4]
-  .bss                zero     0x100018ec     0x4  i2c.o [4]
-  .bss                zero     0x100018f0     0x4  rt_CMSIS.o [6]
-  .bss                zero     0x100018f4     0x4  rt_Time.o [6]
-  .bss                zero     0x100018f8     0x2  ff.o [5]
-  .bss                zero     0x100018fa     0x2  rt_CMSIS.o [6]
-  .bss                zero     0x100018fc     0x2  pca9532.o [3]
-  .bss                zero     0x100018fe     0x2  pca9532.o [3]
-  .bss                zero     0x10001900     0x2  pca9532.o [3]
-  .bss                zero     0x10001902     0x1  main.o [1]
-  .bss                zero     0x10001903     0x1  main.o [1]
-  .bss                zero     0x10001904     0x1  main.o [1]
-  .bss                zero     0x10001905     0x1  i2c.o [4]
-  .bss                zero     0x10001906     0x1  mmc.o [5]
-  .bss                zero     0x10001907     0x1  mmc.o [5]
-  .bss                zero     0x10001908     0x1  mmc.o [5]
-  .bss                zero     0x10001909     0x1  HAL_CM.o [6]
-                             - 0x1000190a  0x1862
+"P2", part 2 of 3:                         0x1a94
+  .bss                zero     0x100000b8   0xba8  RTX_Conf_CM.o [1]
+  .bss                zero     0x10000c60   0x390  RTX_Conf_CM.o [1]
+  .bss                zero     0x10000ff0   0x300  oled.o [3]
+  .bss                zero     0x100012f0   0x230  main.o [1]
+  .bss                zero     0x10001520   0x1ac  RTX_Conf_CM.o [1]
+  .bss                zero     0x100016cc    0x90  RTX_Conf_CM.o [1]
+  .bss                zero     0x1000175c    0x84  RTX_Conf_CM.o [1]
+  .bss                zero     0x100017e0    0x6c  main.o [1]
+  .bss                zero     0x1000184c    0x6c  main.o [1]
+  .bss                zero     0x100018b8    0x3c  rt_Task.o [6]
+  .bss                zero     0x100018f4    0x30  main.o [1]
+  .bss                zero     0x10001924    0x30  main.o [1]
+  .bss                zero     0x10001954    0x24  main.o [1]
+  .bss                zero     0x10001978    0x24  main.o [1]
+  .bss                zero     0x1000199c    0x24  main.o [1]
+  .bss                zero     0x100019c0    0x20  RTX_Conf_CM.o [1]
+  .bss                zero     0x100019e0    0x1c  main.o [1]
+  .bss                zero     0x100019fc    0x18  main.o [1]
+  .bss                zero     0x10001a14    0x18  rt_List.o [6]
+  .bss                zero     0x10001a2c    0x18  rt_List.o [6]
+  .bss                zero     0x10001a44    0x14  main.o [1]
+  .bss                zero     0x10001a58    0x14  modbus.o [3]
+  .bss                zero     0x10001a6c    0x10  main.o [1]
+  .bss                zero     0x10001a7c    0x10  main.o [1]
+  .bss                zero     0x10001a8c     0xc  main.o [1]
+  .bss                zero     0x10001a98     0x8  ff.o [5]
+  .bss                zero     0x10001aa0     0x8  rt_System.o [6]
+  .bss                zero     0x10001aa8     0x8  rt_Robin.o [6]
+  .bss                zero     0x10001ab0     0x4  main.o [1]
+  .bss                zero     0x10001ab4     0x4  main.o [1]
+  .bss                zero     0x10001ab8     0x4  main.o [1]
+  .bss                zero     0x10001abc     0x4  main.o [1]
+  .bss                zero     0x10001ac0     0x4  main.o [1]
+  .bss                zero     0x10001ac4     0x4  main.o [1]
+  .bss                zero     0x10001ac8     0x4  main.o [1]
+  .bss                zero     0x10001acc     0x4  main.o [1]
+  .bss                zero     0x10001ad0     0x4  main.o [1]
+  .bss                zero     0x10001ad4     0x4  main.o [1]
+  .bss                zero     0x10001ad8     0x4  main.o [1]
+  .bss                zero     0x10001adc     0x4  main.o [1]
+  .bss                zero     0x10001ae0     0x4  main.o [1]
+  .bss                zero     0x10001ae4     0x4  main.o [1]
+  .bss                zero     0x10001ae8     0x4  main.o [1]
+  .bss                zero     0x10001aec     0x4  main.o [1]
+  .bss                zero     0x10001af0     0x4  RTX_Conf_CM.o [1]
+  .bss                zero     0x10001af4     0x4  RTX_Conf_CM.o [1]
+  .bss                zero     0x10001af8     0x4  RTX_Conf_CM.o [1]
+  .bss                zero     0x10001afc     0x4  gpio.o [4]
+  .bss                zero     0x10001b00     0x4  gpio.o [4]
+  .bss                zero     0x10001b04     0x4  gpio.o [4]
+  .bss                zero     0x10001b08     0x4  gpio.o [4]
+  .bss                zero     0x10001b0c     0x4  i2c.o [4]
+  .bss                zero     0x10001b10     0x4  i2c.o [4]
+  .bss                zero     0x10001b14     0x4  i2c.o [4]
+  .bss                zero     0x10001b18     0x4  i2c.o [4]
+  .bss                zero     0x10001b1c     0x4  i2c.o [4]
+  .bss                zero     0x10001b20     0x4  i2c.o [4]
+  .bss                zero     0x10001b24     0x4  i2c.o [4]
+  .bss                zero     0x10001b28     0x4  modbus.o [3]
+  .bss                zero     0x10001b2c     0x4  modbus.o [3]
+  .bss                zero     0x10001b30     0x4  rt_CMSIS.o [6]
+  .bss                zero     0x10001b34     0x4  rt_Time.o [6]
+  .bss                zero     0x10001b38     0x2  ff.o [5]
+  .bss                zero     0x10001b3a     0x2  rt_CMSIS.o [6]
+  .bss                zero     0x10001b3c     0x2  pca9532.o [3]
+  .bss                zero     0x10001b3e     0x2  pca9532.o [3]
+  .bss                zero     0x10001b40     0x2  pca9532.o [3]
+  .bss                zero     0x10001b42     0x1  main.o [1]
+  .bss                zero     0x10001b43     0x1  main.o [1]
+  .bss                zero     0x10001b44     0x1  main.o [1]
+  .bss                zero     0x10001b45     0x1  i2c.o [4]
+  .bss                zero     0x10001b46     0x1  mmc.o [5]
+  .bss                zero     0x10001b47     0x1  mmc.o [5]
+  .bss                zero     0x10001b48     0x1  mmc.o [5]
+  .bss                zero     0x10001b49     0x1  HAL_CM.o [6]
+                             - 0x10001b4a  0x1a92
 
 "P2", part 3 of 3:                           0x80
-  CSTACK                       0x10001910    0x80  <Block>
-    CSTACK            uninit   0x10001910    0x80  <Block tail>
-                             - 0x10001990    0x80
+  CSTACK                       0x10001b50    0x80  <Block>
+    CSTACK            uninit   0x10001b50    0x80  <Block tail>
+                             - 0x10001bd0    0x80
 
 
 *******************************************************************************
@@ -300,14 +322,14 @@ __dlib_dynamic_initialization = normal
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x1862:
-          0x100000a8  0x1862
+    1 destination range, total size 0x1a92:
+          0x100000b8  0x1a92
 
 Copy (__iar_copy_init3)
-    1 source range, total size 0xa4 (101% of destination):
-          0x00006158    0xa4
-    1 destination range, total size 0xa2:
-          0x10000000    0xa2
+    1 source range, total size 0xb8 (101% of destination):
+          0x00006f18    0xb8
+    1 destination range, total size 0xb6:
+          0x10000000    0xb6
 
 
 
@@ -315,99 +337,102 @@ Copy (__iar_copy_init3)
 *** MODULE SUMMARY
 ***
 
-    Module             ro code  ro data  rw data
-    ------             -------  -------  -------
-D:\UTFPR\Documentos\8º Período\Sistemas Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO TA BUGADO\LAB04\Examples\Debug\Obj: [1]
-    RTX_Conf_CM.o           72       84    4 164
-    main.o               2 144      297    1 140
-    startup_LPC13xx.o      420
-    system_LPC13xx.o       680        4        4
-    --------------------------------------------
-    Total:               3 316      385    5 308
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+D:\UTFPR\Períodos\8º Período\Sistemas Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo\LAB04\Examples\Debug\Obj: [1]
+    RTX_Conf_CM.o               72       84    4 644
+    main.o                   3 256      545    1 212
+    startup_LPC13xx.o          420
+    system_LPC13xx.o           680        4        4
+    ------------------------------------------------
+    Total:                   4 428      633    5 860
 
 command line: [2]
-    --------------------------------------------
+    ------------------------------------------------
     Total:
 
 Lib_EaBaseBoard.a: [3]
-    acc.o                  184
-    font5x7.o                       768
-    joystick.o              54
-    light.o                268        8        8
-    oled.o               1 250        8      768
-    pca9532.o              240                 6
-    rgb.o                   88
-    --------------------------------------------
-    Total:               2 084      784      782
+    acc.o                      184
+    font5x7.o                           768
+    joystick.o                 144
+    light.o                    268        8        8
+    modbus.o                   944      520       28
+    oled.o                   1 250        8      768
+    pca9532.o                  240                 6
+    rgb.o                       88
+    ------------------------------------------------
+    Total:                   3 118    1 304      810
 
 Lib_MCU.a: [4]
-    gpio.o               1 492                16
-    i2c.o                  812                29
-    nossoSSP.o             316
-    --------------------------------------------
-    Total:               2 620                45
+    gpio.o                   1 572                16
+    i2c.o                      812                29
+    nossoSSP.o                 316
+    uart.o                     336
+    ------------------------------------------------
+    Total:                   3 036                45
 
 Lib_Mmc_Fat.a: [5]
-    ff.o                 6 018      140       10
-    mmc.o                1 908        1        4
-    --------------------------------------------
-    Total:               7 926      141       14
+    ff.o                     6 018      140       10
+    mmc.o                    1 908        1        4
+    ------------------------------------------------
+    Total:                   7 926      141       14
 
 RTX_CM3.a: [6]
-    HAL_CM.o               236                 1
-    HAL_CM3.o              292
-    SVC_Table.o                       4
-    rt_CMSIS.o           2 288                 6
-    rt_Event.o             272
-    rt_List.o              572                48
-    rt_Mailbox.o           676
-    rt_MemBox.o            152
-    rt_Memory.o            142
-    rt_Mutex.o             336
-    rt_Robin.o              92                 8
-    rt_Semaphore.o          52
-    rt_System.o            296                 8
-    rt_Task.o            1 156                60
-    rt_Time.o                6                 4
-    --------------------------------------------
-    Total:               6 568        4      135
+    HAL_CM.o                   236                 1
+    HAL_CM3.o                  292
+    SVC_Table.o                           4
+    rt_CMSIS.o               2 376                 6
+    rt_Event.o                 272
+    rt_List.o                  572                48
+    rt_Mailbox.o               676
+    rt_MemBox.o                152
+    rt_Memory.o                142
+    rt_Mutex.o                 336
+    rt_Robin.o                  92                 8
+    rt_Semaphore.o              52
+    rt_System.o                320                 8
+    rt_Task.o                1 156                60
+    rt_Time.o                    6                 4
+    ------------------------------------------------
+    Total:                   6 680        4      135
 
 dl7M_tlf.a: [7]
-    atoi.o                   8
-    errno.o                 12        4        4
-    exit.o                   4
-    isxxx.o                 20
-    low_level_init.o         4
-    setlocale.o             24      116      116
-    tolower.o               20
-    xlocale_c.o             32
-    xstoul.o               408
-    xtls.o                   2
-    --------------------------------------------
-    Total:                 534      120      120
+    atoi.o                       8
+    errno.o                     12        4        4
+    exit.o                       4
+    isxxx.o                     20
+    low_level_init.o             4
+    setlocale.o                 24      116      116
+    tolower.o                   20
+    xlocale_c.o                 32
+    xstoul.o                   408
+    xtls.o                       2
+    ------------------------------------------------
+    Total:                     534      120      120
 
 rt7M_tl.a: [8]
-    ABImemclr4.o             6
-    ABImemset.o            102
-    ABImemset48.o           50
-    cexit.o                 10
-    copy_init3.o            44
-    cstartup_M.o            12
-    data_init.o             40
-    memchr.o                88
-    zero_init3.o            64
-    --------------------------------------------
-    Total:                 416
+    ABImemclr4.o                 6
+    ABImemcpy_unaligned.o      118
+    ABImemset.o                102
+    ABImemset48.o               50
+    cexit.o                     10
+    copy_init3.o                44
+    cstartup_M.o                12
+    data_init.o                 40
+    memchr.o                    88
+    zero_init3.o                64
+    ------------------------------------------------
+    Total:                     534
 
 shb_l.a: [9]
-    exit.o                  20
-    --------------------------------------------
-    Total:                  20
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
 
-    Gaps                    18        2
-    Linker created                   38      128
-------------------------------------------------
-    Grand Total:        23 502    1 474    6 532
+    Gaps                        24
+    Linker created                       38      128
+----------------------------------------------------
+    Grand Total:            26 300    2 240    7 112
 
 
 *******************************************************************************
@@ -416,129 +441,145 @@ shb_l.a: [9]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x00005f70          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x00005f94          --   Gb  - Linker created -
+.iar.init_table$$Base   0x00006c3c          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00006c60          --   Gb  - Linker created -
 .intvec$$Base           0x00000000          --   Gb  - Linker created -
 .intvec$$Limit          0x00000128          --   Gb  - Linker created -
-CMSIS_RTOS_API_Version  0x000060ec    0x4  Data  Gb  RTX_Conf_CM.o [1]
-CMSIS_RTOS_RTX_Version  0x000060f0    0x4  Data  Gb  RTX_Conf_CM.o [1]
-CSTACK$$Base            0x10001910          --   Gb  - Linker created -
-CSTACK$$Limit           0x10001990          --   Gb  - Linker created -
-CardType                0x10001908    0x1  Data  Lc  mmc.o [5]
-FatFs                   0x10001864    0x8  Data  Lc  ff.o [5]
-Fsid                    0x100018f8    0x2  Data  Lc  ff.o [5]
+CMSIS_RTOS_API_Version  0x00006ea4    0x4  Data  Gb  RTX_Conf_CM.o [1]
+CMSIS_RTOS_RTX_Version  0x00006ea8    0x4  Data  Gb  RTX_Conf_CM.o [1]
+CSTACK$$Base            0x10001b50          --   Gb  - Linker created -
+CSTACK$$Limit           0x10001bd0          --   Gb  - Linker created -
+CardType                0x10001b48    0x1  Data  Lc  mmc.o [5]
+FatFs                   0x10001a98    0x8  Data  Lc  ff.o [5]
+Fsid                    0x10001b38    0x2  Data  Lc  ff.o [5]
+GPIOGetValue            0x000024af   0x50  Code  Gb  gpio.o [4]
 GPIOInit                0x0000220f   0x5c  Code  Gb  gpio.o [4]
-GPIOIntClear            0x000026e9   0x5a  Code  Gb  gpio.o [4]
-GPIOIntEnable           0x0000268f   0x5a  Code  Gb  gpio.o [4]
+GPIOIntClear            0x00002739   0x5a  Code  Gb  gpio.o [4]
+GPIOIntEnable           0x000026df   0x5a  Code  Gb  gpio.o [4]
 GPIOSetDir              0x0000226b  0x142  Code  Gb  gpio.o [4]
-GPIOSetInterrupt        0x000024af  0x1e0  Code  Gb  gpio.o [4]
+GPIOSetInterrupt        0x000024ff  0x1e0  Code  Gb  gpio.o [4]
 GPIOSetValue            0x000023ad  0x102  Code  Gb  gpio.o [4]
-GPIOShadowPort0         0x100018c4    0x4  Data  Lc  gpio.o [4]
-GPIOShadowPort1         0x100018c8    0x4  Data  Lc  gpio.o [4]
-GPIOShadowPort2         0x100018cc    0x4  Data  Lc  gpio.o [4]
-GPIOShadowPort3         0x100018d0    0x4  Data  Lc  gpio.o [4]
-I2CAddr                 0x10001905    0x1  Data  Lc  i2c.o [4]
-I2CEngine               0x00004fe9   0x34  Code  Gb  i2c.o [4]
-I2CInit                 0x00004f6f   0x7a  Code  Gb  i2c.o [4]
-I2CMasterBuffer         0x100018d8    0x4  Data  Lc  i2c.o [4]
-I2CMasterState          0x100018d4    0x4  Data  Lc  i2c.o [4]
-I2CRead                 0x0000501d   0x26  Code  Gb  i2c.o [4]
-I2CReadLength           0x100018e0    0x4  Data  Lc  i2c.o [4]
-I2CSlaveBuffer          0x100018dc    0x4  Data  Lc  i2c.o [4]
-I2CStart                0x00004f2b   0x28  Code  Gb  i2c.o [4]
-I2CStop                 0x00004f53   0x1c  Code  Gb  i2c.o [4]
-I2CWrite                0x00005043   0x22  Code  Gb  i2c.o [4]
-I2CWriteLength          0x100018e4    0x4  Data  Lc  i2c.o [4]
-I2C_IRQHandler          0x00004d99  0x192  Code  Gb  i2c.o [4]
+GPIOShadowPort0         0x10001afc    0x4  Data  Lc  gpio.o [4]
+GPIOShadowPort1         0x10001b00    0x4  Data  Lc  gpio.o [4]
+GPIOShadowPort2         0x10001b04    0x4  Data  Lc  gpio.o [4]
+GPIOShadowPort3         0x10001b08    0x4  Data  Lc  gpio.o [4]
+I2CAddr                 0x10001b45    0x1  Data  Lc  i2c.o [4]
+I2CEngine               0x00004329   0x34  Code  Gb  i2c.o [4]
+I2CInit                 0x000042af   0x7a  Code  Gb  i2c.o [4]
+I2CMasterBuffer         0x10001b10    0x4  Data  Lc  i2c.o [4]
+I2CMasterState          0x10001b0c    0x4  Data  Lc  i2c.o [4]
+I2CRead                 0x0000435d   0x26  Code  Gb  i2c.o [4]
+I2CReadLength           0x10001b18    0x4  Data  Lc  i2c.o [4]
+I2CSlaveBuffer          0x10001b14    0x4  Data  Lc  i2c.o [4]
+I2CStart                0x0000426b   0x28  Code  Gb  i2c.o [4]
+I2CStop                 0x00004293   0x1c  Code  Gb  i2c.o [4]
+I2CWrite                0x00004383   0x22  Code  Gb  i2c.o [4]
+I2CWriteLength          0x10001b1c    0x4  Data  Lc  i2c.o [4]
+I2C_IRQHandler          0x000040d9  0x192  Code  Gb  i2c.o [4]
+NVIC_DisableIRQ         0x000043f1   0x14  Code  Lc  uart.o [4]
 NVIC_EnableIRQ          0x000021f9   0x16  Code  Lc  gpio.o [4]
-NVIC_EnableIRQ          0x00004d85   0x14  Code  Lc  i2c.o [4]
+NVIC_EnableIRQ          0x000040c5   0x14  Code  Lc  i2c.o [4]
 NVIC_EnableIRQ          0x0000012d   0x14  Code  Lc  nossoSSP.o [4]
-OS_Tick_Handler         0x00004107         Code  Gb  HAL_CM3.o [6]
-PIOINT2_IRQHandler      0x00004265   0x66  Code  Gb  main.o [1]
-PendSV_Handler          0x000040cb         Code  Gb  HAL_CM3.o [6]
-RdIndex                 0x100018e8    0x4  Data  Lc  i2c.o [4]
-Region$$Table$$Base     0x00005f70          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00005f94          --   Gb  - Linker created -
-SSP0_IRQHandler         0x00004245   0x20  Code  Gb  main.o [1]
+OS_Tick_Handler         0x00006453         Code  Gb  HAL_CM3.o [6]
+PIOINT2_IRQHandler      0x0000283d   0x66  Code  Gb  main.o [1]
+PendSV_Handler          0x00006417         Code  Gb  HAL_CM3.o [6]
+RdIndex                 0x10001b20    0x4  Data  Lc  i2c.o [4]
+Region$$Table$$Base     0x00006c3c          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00006c60          --   Gb  - Linker created -
+SSP0_IRQHandler         0x0000281d   0x20  Code  Gb  main.o [1]
 SSPInit                 0x00000141   0x90  Code  Gb  nossoSSP.o [4]
 SSPReceive              0x00000207   0x2a  Code  Gb  nossoSSP.o [4]
 SSPSend                 0x000001d1   0x36  Code  Gb  nossoSSP.o [4]
-SVC_Count               0x00006154         Data  Gb  SVC_Table.o [6]
-SVC_Handler             0x00004061         Code  Gb  HAL_CM3.o [6]
-SVC_Table               0x00006158         Data  Gb  SVC_Table.o [6]
-Stat                    0x100000a1    0x1  Data  Lc  mmc.o [5]
-SysTick_Handler         0x00004101         Code  Gb  HAL_CM3.o [6]
-SystemCoreClock         0x10000090    0x4  Data  Gb  system_LPC13xx.o [1]
-SystemCoreClockUpdate   0x00004aa5  0x188  Code  Gb  system_LPC13xx.o [1]
-SystemInit              0x00004c2d   0xa4  Code  Gb  system_LPC13xx.o [1]
-Timer1                  0x10001906    0x1  Data  Lc  mmc.o [5]
-Timer2                  0x10001907    0x1  Data  Lc  mmc.o [5]
-WrIndex                 0x100018ec    0x4  Data  Lc  i2c.o [4]
+SVC_Count               0x00006f14         Data  Gb  SVC_Table.o [6]
+SVC_Handler             0x000063ad         Code  Gb  HAL_CM3.o [6]
+SVC_Table               0x00006f18         Data  Gb  SVC_Table.o [6]
+Stat                    0x100000b5    0x1  Data  Lc  mmc.o [5]
+SysTick_Handler         0x0000644d         Code  Gb  HAL_CM3.o [6]
+SystemCoreClock         0x100000a4    0x4  Data  Gb  system_LPC13xx.o [1]
+SystemCoreClockUpdate   0x00003e1d  0x188  Code  Gb  system_LPC13xx.o [1]
+SystemInit              0x00003fa5   0xa4  Code  Gb  system_LPC13xx.o [1]
+Timer1                  0x10001b46    0x1  Data  Lc  mmc.o [5]
+Timer2                  0x10001b47    0x1  Data  Lc  mmc.o [5]
+UARTInit                0x00004405   0xae  Code  Gb  uart.o [4]
+UARTReceive             0x000044d1   0x3c  Code  Gb  uart.o [4]
+UARTSend                0x000044b3   0x1e  Code  Gb  uart.o [4]
+WrIndex                 0x10001b24    0x4  Data  Lc  i2c.o [4]
 _IsdstStr               0x10000004    0x4  Data  Gb  setlocale.o [7]
-_LocaleC_isspace        0x00005b39   0x14  Code  Gb  xlocale_c.o [7]
-_LocaleC_tolower        0x00005b4d    0xc  Code  Gb  xlocale_c.o [7]
-_LocaleForCat           0x00005b21   0x12  Code  Gb  setlocale.o [7]
+_LocaleC_isspace        0x000065f1   0x14  Code  Gb  xlocale_c.o [7]
+_LocaleC_tolower        0x00006605    0xc  Code  Gb  xlocale_c.o [7]
+_LocaleForCat           0x000065d9   0x12  Code  Gb  setlocale.o [7]
 _LocaleReturnString     0x10000024   0x50  Data  Lc  setlocale.o [7]
 _Locale_Profile         0x10000008   0x1c  Data  Gb  setlocale.o [7]
 _TzoneStr               0x10000000    0x4  Data  Gb  setlocale.o [7]
 __Vectors               0x00000000          --   Gb  startup_LPC13xx.o [1]
 __Vectors_End           0x00000128         Data  Gb  startup_LPC13xx.o [1]
 __Vectors_Size {Abs}    0x00000128          --   Gb  startup_LPC13xx.o [1]
-__aeabi_errno_addr      0x0000027d    0x6  Code  Gb  errno.o [7]
-__aeabi_memclr4         0x000041e9         Code  Gb  ABImemclr4.o [8]
-__aeabi_memset          0x000058a1         Code  Gb  ABImemset.o [8]
-__cmain                 0x00003895   0x22  Code  Gb  RTX_Conf_CM.o [1]
-__disable_irq           0x00003b21    0xc  Code  Lc  rt_MemBox.o [6]
-__disable_irq           0x000035d5    0xc  Code  Lc  rt_Mailbox.o [6]
-__disable_irq           0x00003df5    0xc  Code  Lc  rt_System.o [6]
-__disable_irq           0x00003bb9    0xc  Code  Lc  rt_List.o [6]
-__enable_irq            0x00003b1d    0x4  Code  Lc  rt_MemBox.o [6]
-__enable_irq            0x000035d1    0x4  Code  Lc  rt_Mailbox.o [6]
-__enable_irq            0x00003df1    0x4  Code  Lc  rt_System.o [6]
-__enable_irq            0x00003bb5    0x4  Code  Lc  rt_List.o [6]
-__exit                  0x00004231   0x14  Code  Gb  exit.o [9]
-__iar_Errno             0x1000009c    0x4  Data  Gb  errno.o [7]
-__iar_Memchr            0x00005ac9         Code  Gb  memchr.o [8]
-__iar_Memset            0x000058a1         Code  Gb  ABImemset.o [8]
-__iar_Memset4_word      0x000041fd         Code  Gb  ABImemset48.o [8]
-__iar_Memset8_word      0x000041fd         Code  Gb  ABImemset48.o [8]
-__iar_Memset_word       0x000058a9         Code  Gb  ABImemset.o [8]
-__iar_Stoul             0x00005a4d    0x4  Code  Gb  xstoul.o [7]
-__iar_Stoulx            0x00005909  0x13e  Code  Gb  xstoul.o [7]
-__iar_copy_init3        0x00005f1d   0x2c  Code  Gb  copy_init3.o [8]
-__iar_data_init3        0x00004189   0x28  Code  Gb  data_init.o [8]
+__aeabi_errno_addr      0x0000658d    0x6  Code  Gb  errno.o [7]
+__aeabi_memclr4         0x00006505         Code  Gb  ABImemclr4.o [8]
+__aeabi_memset          0x00006151         Code  Gb  ABImemset.o [8]
+__cmain                 0x00005b09   0x22  Code  Gb  RTX_Conf_CM.o [1]
+__disable_irq           0x00005d95    0xc  Code  Lc  rt_MemBox.o [6]
+__disable_irq           0x00005849    0xc  Code  Lc  rt_Mailbox.o [6]
+__disable_irq           0x00005701    0xc  Code  Lc  rt_System.o [6]
+__disable_irq           0x00005e2d    0xc  Code  Lc  rt_List.o [6]
+__enable_irq            0x00005d91    0x4  Code  Lc  rt_MemBox.o [6]
+__enable_irq            0x00005845    0x4  Code  Lc  rt_Mailbox.o [6]
+__enable_irq            0x000056fd    0x4  Code  Lc  rt_System.o [6]
+__enable_irq            0x00005e29    0x4  Code  Lc  rt_List.o [6]
+__exit                  0x00006615   0x14  Code  Gb  exit.o [9]
+__iar_Errno             0x100000b0    0x4  Data  Gb  errno.o [7]
+__iar_Memchr            0x00006535         Code  Gb  memchr.o [8]
+__iar_Memset            0x00006151         Code  Gb  ABImemset.o [8]
+__iar_Memset4_word      0x000065a5         Code  Gb  ABImemset48.o [8]
+__iar_Memset8_word      0x000065a5         Code  Gb  ABImemset48.o [8]
+__iar_Memset_word       0x00006159         Code  Gb  ABImemset.o [8]
+__iar_Stoul             0x000062fd    0x4  Code  Gb  xstoul.o [7]
+__iar_Stoulx            0x000061b9  0x13e  Code  Gb  xstoul.o [7]
+__iar_copy_init3        0x00006be9   0x2c  Code  Gb  copy_init3.o [8]
+__iar_data_init3        0x0000027d   0x28  Code  Gb  data_init.o [8]
 __iar_dlib_perthread_access
-                        0x00005b59    0x2  Code  Gb  xtls.o [7]
-__iar_program_start     0x000060c1         Code  Gb  cstartup_M.o [8]
-__iar_zero_init3        0x00005edd   0x40  Code  Gb  zero_init3.o [8]
-__low_level_init        0x00004185    0x4  Code  Gb  low_level_init.o [7]
+                        0x00006611    0x2  Code  Gb  xtls.o [7]
+__iar_program_start     0x00006e65         Code  Gb  cstartup_M.o [8]
+__iar_unaligned___aeabi_memcpy
+                        0x00004dc1         Code  Gb  ABImemcpy_unaligned.o [8]
+__iar_unaligned___aeabi_memcpy4
+                        0x00004de1         Code  Gb  ABImemcpy_unaligned.o [8]
+__iar_unaligned___aeabi_memcpy8
+                        0x00004de1         Code  Gb  ABImemcpy_unaligned.o [8]
+__iar_zero_init3        0x00006ba9   0x40  Code  Gb  zero_init3.o [8]
+__low_level_init        0x00000277    0x4  Code  Gb  low_level_init.o [7]
 __vector_table          0x00000000         Data  Gb  startup_LPC13xx.o [1]
 __vector_table_0x1c     0x0000001c         Data  Gb  startup_LPC13xx.o [1]
-_alloc_box              0x00004029         Code  Gb  HAL_CM3.o [6]
-_exit                   0x000041f1         Code  Gb  cexit.o [8]
-_free_box               0x00004045         Code  Gb  HAL_CM3.o [6]
-_init_box               0x00003b2d   0x46  Code  Gb  rt_MemBox.o [6]
-acc_init                0x000056db    0xa  Code  Gb  acc.o [3]
-acc_read                0x000056e5   0x74  Code  Gb  acc.o [3]
-atoi                    0x00000275    0x8  Code  Gb  atoi.o [7]
-blink0Shadow            0x100018fc    0x2  Data  Lc  pca9532.o [3]
-blink1Shadow            0x100018fe    0x2  Data  Lc  pca9532.o [3]
+_alloc_box              0x00006375         Code  Gb  HAL_CM3.o [6]
+_exit                   0x00006599         Code  Gb  cexit.o [8]
+_free_box               0x00006391         Code  Gb  HAL_CM3.o [6]
+_init_box               0x00005da1   0x46  Code  Gb  rt_MemBox.o [6]
+acc_init                0x00004bfb    0xa  Code  Gb  acc.o [3]
+acc_read                0x00004c05   0x74  Code  Gb  acc.o [3]
+addr2led                0x10000080    0x8  Data  Lc  main.o [1]
+atoi                    0x0000026b    0x8  Code  Gb  atoi.o [7]
+aucCRCLo                0x00006a28  0x100  Data  Lc  modbus.o [3]
+aucCRchi                0x00006928  0x100  Data  Lc  modbus.o [3]
+blink0Shadow            0x10001b3c    0x2  Data  Lc  pca9532.o [3]
+blink1Shadow            0x10001b3e    0x2  Data  Lc  pca9532.o [3]
 check_fs                0x00000c89   0x78  Code  Lc  ff.o [5]
 chk_chr                 0x00000345   0x14  Code  Lc  ff.o [5]
 chk_mounted             0x00000d01  0x2d0  Code  Gb  ff.o [5]
 chk_power               0x00001b51    0x4  Code  Lc  mmc.o [5]
 clust2sect              0x000007d7   0x18  Code  Gb  ff.o [5]
-config_read             0x00004521   0x34  Code  Lc  main.o [1]
+coil_map                0x10001a8c    0xc  Data  Lc  main.o [1]
+coil_map                0x10001b28    0x4  Data  Lc  modbus.o [3]
+config_read             0x00002bf1   0x34  Code  Lc  main.o [1]
 create_chain            0x00000729   0xae  Code  Lc  ff.o [5]
 create_name             0x00000ab5  0x130  Code  Lc  ff.o [5]
-dbg_init                0x00003f9f   0x20  Code  Gb  HAL_CM.o [6]
-dbg_msg                 0x10001909    0x1  Data  Gb  HAL_CM.o [6]
-dbg_task_notify         0x00003fbf   0x1c  Code  Gb  HAL_CM.o [6]
-dbg_task_switch         0x00003fdb    0xc  Code  Gb  HAL_CM.o [6]
-debounce_count          0x10001880    0x4  Data  Gb  main.o [1]
+dbg_init                0x000060eb   0x20  Code  Gb  HAL_CM.o [6]
+dbg_msg                 0x10001b49    0x1  Data  Gb  HAL_CM.o [6]
+dbg_task_notify         0x0000610b   0x1c  Code  Gb  HAL_CM.o [6]
+dbg_task_switch         0x00006127    0xc  Code  Gb  HAL_CM.o [6]
+debounce_count          0x10001ab4    0x4  Data  Gb  main.o [1]
 deselect                0x00001b05   0x12  Code  Lc  mmc.o [5]
-digits                  0x00005a50   0x28  Data  Lc  xstoul.o [7]
-dir                     0x100017b0   0x1c  Data  Gb  main.o [1]
+digits                  0x00006300   0x28  Data  Lc  xstoul.o [7]
+dir                     0x100019e0   0x1c  Data  Gb  main.o [1]
 dir_find                0x000009cd   0x60  Code  Lc  ff.o [5]
 dir_next                0x0000089d  0x130  Code  Lc  ff.o [5]
 dir_register            0x00000a2d   0x88  Code  Lc  ff.o [5]
@@ -548,8 +589,8 @@ disk_ioctl              0x00001f61  0x27c  Code  Gb  mmc.o [5]
 disk_read               0x00001e09   0x98  Code  Gb  mmc.o [5]
 disk_status             0x00001df7   0x12  Code  Gb  mmc.o [5]
 disk_write              0x00001ea1   0xc0  Code  Gb  mmc.o [5]
-display_header          0x10001844   0x10  Data  Gb  main.o [1]
-exit                    0x000041b1    0x4  Code  Gb  exit.o [7]
+display_header          0x10001a6c   0x10  Data  Gb  main.o [1]
+exit                    0x000002a5    0x4  Code  Gb  exit.o [7]
 f_close                 0x0000165f   0x18  Code  Gb  ff.o [5]
 f_lseek                 0x00001677  0x17e  Code  Gb  ff.o [5]
 f_mount                 0x00000ffb   0x32  Code  Gb  ff.o [5]
@@ -561,265 +602,289 @@ f_puts                  0x000018b5   0x2c  Code  Gb  ff.o [5]
 f_read                  0x000011db  0x1c2  Code  Gb  ff.o [5]
 f_sync                  0x000015cd   0x92  Code  Gb  ff.o [5]
 f_write                 0x0000139d  0x230  Code  Gb  ff.o [5]
-fatFs                   0x10001138  0x230  Data  Gb  main.o [1]
-fil_config              0x1000178c   0x24  Data  Gb  main.o [1]
-fil_data                0x10001768   0x24  Data  Gb  main.o [1]
-file_offset             0x10001888    0x4  Data  Gb  main.o [1]
+fatFs                   0x100012f0  0x230  Data  Gb  main.o [1]
+fil_config              0x10001978   0x24  Data  Gb  main.o [1]
+fil_data                0x10001954   0x24  Data  Gb  main.o [1]
+fil_gantt               0x1000199c   0x24  Data  Gb  main.o [1]
+file_offset             0x10001abc    0x4  Data  Gb  main.o [1]
 follow_path             0x00000be5   0xa4  Code  Lc  ff.o [5]
-font5x7                 0x00005b5c  0x300  Data  Gb  font5x7.o [3]
-font_mask               0x000060d4    0x8  Data  Lc  oled.o [3]
-fr                      0x10001902    0x1  Data  Gb  main.o [1]
-getStatus               0x000056a1   0x22  Code  Lc  acc.o [3]
+font5x7                 0x00006628  0x300  Data  Gb  font5x7.o [3]
+font_mask               0x00006e88    0x8  Data  Lc  oled.o [3]
+fr                      0x10001b42    0x1  Data  Gb  main.o [1]
+getStatus               0x00004bc1   0x22  Code  Lc  acc.o [3]
 get_fat                 0x000004a3   0xfa  Code  Gb  ff.o [5]
 get_fattime             0x00001869    0x4  Code  Gb  ff.o [5]
-hLine                   0x00005213   0x36  Code  Lc  oled.o [3]
-intToString             0x000044c5   0x56  Code  Lc  main.o [1]
-isrMessageGet           0x00002e3b   0x2a  Code  Gb  rt_CMSIS.o [6]
-isrMessagePut           0x00002e0d   0x2e  Code  Gb  rt_CMSIS.o [6]
-isrSignalSet            0x00002bdd   0x28  Code  Gb  rt_CMSIS.o [6]
-isr_evt_set             0x0000394d   0x20  Code  Gb  rt_Event.o [6]
-isr_mbx_receive         0x0000374b   0x4c  Code  Gb  rt_Mailbox.o [6]
-isr_mbx_send            0x0000373d    0xe  Code  Gb  rt_Mailbox.o [6]
-isspace                 0x00005aa1   0x14  Code  Gb  isxxx.o [7]
-joystick_init           0x00004d4d   0x36  Code  Gb  joystick.o [3]
-ledStateShadow          0x10001900    0x2  Data  Lc  pca9532.o [3]
-light_enable            0x000055b9   0x2a  Code  Gb  light.o [3]
-light_init              0x000055b7    0x2  Code  Gb  light.o [3]
-light_read              0x000055e3   0x56  Code  Gb  light.o [3]
-light_setRange          0x00005639   0x60  Code  Gb  light.o [3]
-m_tmr                   0x100018c0    0x4  Data  Gb  RTX_Conf_CM.o [1]
-mail_DataOLED           0x10001898    0x4  Data  Gb  main.o [1]
-mail_DataProcess        0x10001890    0x4  Data  Gb  main.o [1]
-mail_DataSD             0x10001894    0x4  Data  Gb  main.o [1]
-main                    0x000042cb  0x1fa  Code  Gb  main.o [1]
+hLine                   0x00004733   0x36  Code  Lc  oled.o [3]
+intToString             0x00002b95   0x56  Code  Lc  main.o [1]
+isrMessageGet           0x00003b97   0x2a  Code  Gb  rt_CMSIS.o [6]
+isrMessagePut           0x00003b69   0x2e  Code  Gb  rt_CMSIS.o [6]
+isrSignalSet            0x00003931   0x28  Code  Gb  rt_CMSIS.o [6]
+isr_evt_set             0x00005bc1   0x20  Code  Gb  rt_Event.o [6]
+isr_mbx_receive         0x000059bf   0x4c  Code  Gb  rt_Mailbox.o [6]
+isr_mbx_send            0x000059b1    0xe  Code  Gb  rt_Mailbox.o [6]
+isspace                 0x0000650b   0x14  Code  Gb  isxxx.o [7]
+joystick_init           0x00004541   0x36  Code  Gb  joystick.o [3]
+joystick_read           0x00004577   0x5a  Code  Gb  joystick.o [3]
+ledStateShadow          0x10001b40    0x2  Data  Lc  pca9532.o [3]
+light_enable            0x00004ad9   0x2a  Code  Gb  light.o [3]
+light_init              0x00004ad7    0x2  Code  Gb  light.o [3]
+light_read              0x00004b03   0x56  Code  Gb  light.o [3]
+light_setRange          0x00004b59   0x60  Code  Gb  light.o [3]
+m_tmr                   0x10001af8    0x4  Data  Gb  RTX_Conf_CM.o [1]
+mail_DataOLED           0x10001acc    0x4  Data  Gb  main.o [1]
+mail_DataProcess        0x10001ac4    0x4  Data  Gb  main.o [1]
+mail_DataSD             0x10001ac8    0x4  Data  Gb  main.o [1]
+main                    0x000028a3  0x2f2  Code  Gb  main.o [1]
 mem_cmp                 0x00000325   0x20  Code  Lc  ff.o [5]
 mem_cpy                 0x00000301   0x14  Code  Lc  ff.o [5]
 mem_set                 0x00000315   0x10  Code  Lc  ff.o [5]
-memchr                  0x00005ac9         Code  Gb  memchr.o [8]
+memchr                  0x00006535         Code  Gb  memchr.o [8]
+modbus_respondMaster    0x000051a9   0x26  Code  Gb  modbus.o [3]
+modbus_waitMasterRequest
+                        0x0000516d   0x3c  Code  Gb  modbus.o [3]
 move_window             0x00000359   0x74  Code  Lc  ff.o [5]
-mp_stk                  0x100000a8  0xa00  Data  Gb  RTX_Conf_CM.o [1]
-mp_stk_size             0x000060fc    0x4  Data  Gb  RTX_Conf_CM.o [1]
-mp_tcb                  0x10001368  0x178  Data  Gb  RTX_Conf_CM.o [1]
+mp_stk                  0x100000b8  0xba8  Data  Gb  RTX_Conf_CM.o [1]
+mp_stk_size             0x00006eb4    0x4  Data  Gb  RTX_Conf_CM.o [1]
+mp_tcb                  0x10001520  0x1ac  Data  Gb  RTX_Conf_CM.o [1]
 mp_tcb_size             0x00000268    0x2  Data  Gb  RTX_Conf_CM.o [1]
 mp_tmr_size             0x00000272    0x2  Data  Gb  RTX_Conf_CM.o [1]
-msTicks                 0x1000187c    0x4  Data  Lc  main.o [1]
-mutex_Spi               0x1000189c    0x4  Data  Gb  main.o [1]
-ndigs                   0x00005a78   0x28  Data  Lc  xstoul.o [7]
-oled_clearScreen        0x0000545d   0x48  Code  Gb  oled.o [3]
-oled_fillRect           0x000053cd   0x90  Code  Gb  oled.o [3]
-oled_init               0x0000527f   0x6e  Code  Gb  oled.o [3]
-oled_putChar            0x000054a5   0xa2  Code  Gb  oled.o [3]
-oled_putPixel           0x000052ed   0xe0  Code  Gb  oled.o [3]
-oled_putString          0x00005555   0x3e  Code  Gb  oled.o [3]
-osDelay                 0x00002a45   0x14  Code  Gb  rt_CMSIS.o [6]
-osKernelInitialize      0x000028ad   0x20  Code  Gb  rt_CMSIS.o [6]
-osKernelStart           0x000028cd   0x70  Code  Gb  rt_CMSIS.o [6]
-osMailAlloc             0x00002ff1   0x2c  Code  Gb  rt_CMSIS.o [6]
-osMailCreate            0x00002fc9   0x26  Code  Gb  rt_CMSIS.o [6]
-osMailFree              0x00003029   0x18  Code  Gb  rt_CMSIS.o [6]
-osMailGet               0x00003053   0x20  Code  Gb  rt_CMSIS.o [6]
-osMailPut               0x00003041   0x12  Code  Gb  rt_CMSIS.o [6]
-osMessageGet            0x00002e85   0x30  Code  Gb  rt_CMSIS.o [6]
-osMessagePut            0x00002e6d   0x14  Code  Gb  rt_CMSIS.o [6]
+msTicks                 0x10001ab0    0x4  Data  Lc  main.o [1]
+mutex_Spi               0x10001ad0    0x4  Data  Gb  main.o [1]
+ndigs                   0x00006328   0x28  Data  Lc  xstoul.o [7]
+oled_clearScreen        0x0000497d   0x48  Code  Gb  oled.o [3]
+oled_fillRect           0x000048ed   0x90  Code  Gb  oled.o [3]
+oled_init               0x0000479f   0x6e  Code  Gb  oled.o [3]
+oled_putChar            0x000049c5   0xa2  Code  Gb  oled.o [3]
+oled_putPixel           0x0000480d   0xe0  Code  Gb  oled.o [3]
+oled_putString          0x00004a75   0x3e  Code  Gb  oled.o [3]
+osDelay                 0x00003799   0x14  Code  Gb  rt_CMSIS.o [6]
+osKernelInitialize      0x000035ed   0x20  Code  Gb  rt_CMSIS.o [6]
+osKernelStart           0x0000360d   0x70  Code  Gb  rt_CMSIS.o [6]
+osKernelSysTick         0x0000367d   0x14  Code  Gb  rt_CMSIS.o [6]
+osMailAlloc             0x00003d51   0x2c  Code  Gb  rt_CMSIS.o [6]
+osMailCreate            0x00003d29   0x26  Code  Gb  rt_CMSIS.o [6]
+osMailFree              0x00003d89   0x18  Code  Gb  rt_CMSIS.o [6]
+osMailGet               0x00003db3   0x20  Code  Gb  rt_CMSIS.o [6]
+osMailPut               0x00003da1   0x12  Code  Gb  rt_CMSIS.o [6]
+osMessageGet            0x00003be5   0x30  Code  Gb  rt_CMSIS.o [6]
+osMessagePut            0x00003bc9   0x14  Code  Gb  rt_CMSIS.o [6]
 osMessageQId_osTimerMessageQ
-                        0x100018bc    0x4  Data  Gb  RTX_Conf_CM.o [1]
-osMutexCreate           0x00002cc9   0x3c  Code  Gb  rt_CMSIS.o [6]
-osMutexRelease          0x00002d19   0x14  Code  Gb  rt_CMSIS.o [6]
-osMutexWait             0x00002d05   0x14  Code  Gb  rt_CMSIS.o [6]
-osSignalSet             0x00002c05   0x16  Code  Gb  rt_CMSIS.o [6]
-osSignalWait            0x00002c1d   0x30  Code  Gb  rt_CMSIS.o [6]
-osThreadCreate          0x000029f5   0x2a  Code  Gb  rt_CMSIS.o [6]
-osThreadExit            0x00002a21   0x12  Code  Gb  rt_CMSIS.o [6]
+                        0x10001af4    0x4  Data  Gb  RTX_Conf_CM.o [1]
+osMutexCreate           0x00003a1d   0x3c  Code  Gb  rt_CMSIS.o [6]
+osMutexRelease          0x00003a6d   0x14  Code  Gb  rt_CMSIS.o [6]
+osMutexWait             0x00003a59   0x14  Code  Gb  rt_CMSIS.o [6]
+osSignalSet             0x00003959   0x16  Code  Gb  rt_CMSIS.o [6]
+osSignalWait            0x00003971   0x30  Code  Gb  rt_CMSIS.o [6]
+osThreadCreate          0x00003749   0x2a  Code  Gb  rt_CMSIS.o [6]
+osThreadExit            0x00003775   0x12  Code  Gb  rt_CMSIS.o [6]
 osThreadId_osTimerThread
-                        0x100018b8    0x4  Data  Gb  RTX_Conf_CM.o [1]
-osTimerThread           0x00002af9   0x40  Code  Gb  rt_CMSIS.o [6]
-os_active_TCB           0x100017cc   0x1c  Data  Gb  RTX_Conf_CM.o [1]
-os_clockrate            0x000060f4    0x4  Data  Gb  RTX_Conf_CM.o [1]
-os_dly                  0x10001818   0x18  Data  Gb  rt_List.o [6]
-os_error                0x00003879   0x1c  Code  Gb  RTX_Conf_CM.o [1]
-os_fifo                 0x10001570   0x84  Data  Gb  RTX_Conf_CM.o [1]
-os_fifo_size            0x000041ef    0x1  Data  Gb  RTX_Conf_CM.o [1]
-os_flags                0x000041ee    0x1  Data  Gb  RTX_Conf_CM.o [1]
-os_idle_TCB             0x100016cc   0x34  Data  Gb  rt_Task.o [6]
-os_idle_demon           0x00003875    0x4  Code  Gb  RTX_Conf_CM.o [1]
-os_initialized          0x100018fa    0x1  Data  Gb  rt_CMSIS.o [6]
-os_lock                 0x1000186c    0x1  Data  Lc  rt_System.o [6]
+                        0x10001af0    0x4  Data  Gb  RTX_Conf_CM.o [1]
+osTimerThread           0x0000384d   0x40  Code  Gb  rt_CMSIS.o [6]
+os_active_TCB           0x100019c0   0x20  Data  Gb  RTX_Conf_CM.o [1]
+os_clockrate            0x00006eac    0x4  Data  Gb  RTX_Conf_CM.o [1]
+os_dly                  0x10001a2c   0x18  Data  Gb  rt_List.o [6]
+os_error                0x00005aed   0x1c  Code  Gb  RTX_Conf_CM.o [1]
+os_fifo                 0x1000175c   0x84  Data  Gb  RTX_Conf_CM.o [1]
+os_fifo_size            0x00000275    0x1  Data  Gb  RTX_Conf_CM.o [1]
+os_flags                0x00000274    0x1  Data  Gb  RTX_Conf_CM.o [1]
+os_idle_TCB             0x100018b8   0x34  Data  Gb  rt_Task.o [6]
+os_idle_demon           0x00005ae9    0x4  Code  Gb  RTX_Conf_CM.o [1]
+os_initialized          0x10001b3a    0x1  Data  Gb  rt_CMSIS.o [6]
+os_lock                 0x10001aa0    0x1  Data  Lc  rt_System.o [6]
 os_mailQ_def_mail_DataOLED
-                        0x000060a8    0xc  Data  Gb  main.o [1]
+                        0x00006e4c    0xc  Data  Gb  main.o [1]
 os_mailQ_def_mail_DataProcess
-                        0x00006090    0xc  Data  Gb  main.o [1]
+                        0x00006e34    0xc  Data  Gb  main.o [1]
 os_mailQ_def_mail_DataSD
-                        0x0000609c    0xc  Data  Gb  main.o [1]
+                        0x00006e40    0xc  Data  Gb  main.o [1]
 os_mailQ_m_mail_DataOLED
-                        0x100017e8   0x18  Data  Gb  main.o [1]
+                        0x100019fc   0x18  Data  Gb  main.o [1]
 os_mailQ_m_mail_DataProcess
-                        0x100015f4   0x6c  Data  Gb  main.o [1]
-os_mailQ_m_mail_DataSD  0x10001660   0x6c  Data  Gb  main.o [1]
+                        0x100017e0   0x6c  Data  Gb  main.o [1]
+os_mailQ_m_mail_DataSD  0x1000184c   0x6c  Data  Gb  main.o [1]
 os_mailQ_p_mail_DataOLED
-                        0x10000084    0x8  Data  Gb  main.o [1]
+                        0x10000098    0x8  Data  Gb  main.o [1]
 os_mailQ_p_mail_DataProcess
-                        0x10000074    0x8  Data  Gb  main.o [1]
-os_mailQ_p_mail_DataSD  0x1000007c    0x8  Data  Gb  main.o [1]
+                        0x10000088    0x8  Data  Gb  main.o [1]
+os_mailQ_p_mail_DataSD  0x10000090    0x8  Data  Gb  main.o [1]
 os_mailQ_q_mail_DataOLED
-                        0x10001830   0x14  Data  Gb  main.o [1]
+                        0x10001a44   0x14  Data  Gb  main.o [1]
 os_mailQ_q_mail_DataProcess
-                        0x10001708   0x30  Data  Gb  main.o [1]
-os_mailQ_q_mail_DataSD  0x10001738   0x30  Data  Gb  main.o [1]
+                        0x100018f4   0x30  Data  Gb  main.o [1]
+os_mailQ_q_mail_DataSD  0x10001924   0x30  Data  Gb  main.o [1]
 os_maxtaskrun           0x00000128    0x2  Data  Gb  RTX_Conf_CM.o [1]
 os_messageQ_def_osTimerMessageQ
-                        0x000060cc    0x8  Data  Gb  RTX_Conf_CM.o [1]
+                        0x00006e78    0x8  Data  Gb  RTX_Conf_CM.o [1]
 os_messageQ_q_osTimerMessageQ
-                        0x100014e0   0x90  Data  Gb  RTX_Conf_CM.o [1]
-os_mutex_cb_mutex_Spi   0x10001854   0x10  Data  Gb  main.o [1]
-os_mutex_def_mutex_Spi  0x000060dc    0x4  Data  Gb  main.o [1]
-os_psh_flag             0x1000186d    0x1  Data  Lc  rt_System.o [6]
-os_rdy                  0x10001800   0x18  Data  Gb  rt_List.o [6]
-os_robin                0x10001874    0x8  Data  Gb  rt_Robin.o [6]
-os_rrobin               0x000060e4    0x4  Data  Gb  RTX_Conf_CM.o [1]
-os_running              0x100018fb    0x1  Data  Gb  rt_CMSIS.o [6]
-os_set_env              0x00004011         Code  Gb  HAL_CM3.o [6]
-os_stack_mem            0x10000aa8  0x390  Data  Gb  RTX_Conf_CM.o [1]
-os_stack_sz             0x00006100    0x4  Data  Gb  RTX_Conf_CM.o [1]
-os_stackinfo            0x000060e0    0x4  Data  Gb  RTX_Conf_CM.o [1]
-os_thread_def_main      0x0000602c   0x10  Data  Gb  RTX_Conf_CM.o [1]
+                        0x100016cc   0x90  Data  Gb  RTX_Conf_CM.o [1]
+os_mutex_cb_mutex_Spi   0x10001a7c   0x10  Data  Gb  main.o [1]
+os_mutex_def_mutex_Spi  0x00006e94    0x4  Data  Gb  main.o [1]
+os_psh_flag             0x10001aa1    0x1  Data  Lc  rt_System.o [6]
+os_rdy                  0x10001a14   0x18  Data  Gb  rt_List.o [6]
+os_robin                0x10001aa8    0x8  Data  Gb  rt_Robin.o [6]
+os_rrobin               0x00006e9c    0x4  Data  Gb  RTX_Conf_CM.o [1]
+os_running              0x10001b3b    0x1  Data  Gb  rt_CMSIS.o [6]
+os_set_env              0x0000635d         Code  Gb  HAL_CM3.o [6]
+os_stack_mem            0x10000c60  0x390  Data  Gb  RTX_Conf_CM.o [1]
+os_stack_sz             0x00006eb8    0x4  Data  Gb  RTX_Conf_CM.o [1]
+os_stackinfo            0x00006e98    0x4  Data  Gb  RTX_Conf_CM.o [1]
+os_thread_def_main      0x00006db8   0x10  Data  Gb  RTX_Conf_CM.o [1]
 os_thread_def_osTimerThread
-                        0x0000601c   0x10  Data  Gb  RTX_Conf_CM.o [1]
+                        0x00006da8   0x10  Data  Gb  RTX_Conf_CM.o [1]
+os_thread_def_task_Modbus
+                        0x00006d98   0x10  Data  Gb  main.o [1]
 os_thread_def_task_PauseRoutine
-                        0x0000600c   0x10  Data  Gb  main.o [1]
+                        0x00006d88   0x10  Data  Gb  main.o [1]
 os_thread_def_task_PrintOLED
-                        0x00005fec   0x10  Data  Gb  main.o [1]
+                        0x00006d68   0x10  Data  Gb  main.o [1]
 os_thread_def_task_PrintSD
-                        0x00005fcc   0x10  Data  Gb  main.o [1]
+                        0x00006d48   0x10  Data  Gb  main.o [1]
 os_thread_def_task_ProcessData
-                        0x00005ffc   0x10  Data  Gb  main.o [1]
+                        0x00006d78   0x10  Data  Gb  main.o [1]
 os_thread_def_task_ReadSensors
-                        0x00005fdc   0x10  Data  Gb  main.o [1]
-os_tick_init            0x00003e7d   0x20  Code  Wk  rt_System.o [6]
-os_tick_irqack          0x00003e9d    0x2  Code  Wk  rt_System.o [6]
-os_tick_irqn            0x10001870    0x4  Data  Gb  rt_System.o [6]
-os_time                 0x100018f4    0x4  Data  Gb  rt_Time.o [6]
-os_timer_head           0x100018f0    0x4  Data  Gb  rt_CMSIS.o [6]
-os_timernum             0x000060f8    0x4  Data  Gb  RTX_Conf_CM.o [1]
-os_trv                  0x000060e8    0x4  Data  Gb  RTX_Conf_CM.o [1]
-os_tsk                  0x10001700    0x8  Data  Gb  rt_Task.o [6]
-pca9532_setLeds         0x00005863   0x30  Code  Gb  pca9532.o [3]
-pend_flags              0x1000186e    0x1  Data  Lc  rt_System.o [6]
+                        0x00006d58   0x10  Data  Gb  main.o [1]
+os_tick_init            0x00005789   0x20  Code  Wk  rt_System.o [6]
+os_tick_irqack          0x000057bf    0x2  Code  Wk  rt_System.o [6]
+os_tick_irqn            0x10001aa4    0x4  Data  Gb  rt_System.o [6]
+os_tick_ovf             0x000057b5    0xa  Code  Wk  rt_System.o [6]
+os_tick_val             0x000057a9    0xc  Code  Wk  rt_System.o [6]
+os_time                 0x10001b34    0x4  Data  Gb  rt_Time.o [6]
+os_timer_head           0x10001b30    0x4  Data  Gb  rt_CMSIS.o [6]
+os_timernum             0x00006eb0    0x4  Data  Gb  RTX_Conf_CM.o [1]
+os_trv                  0x00006ea0    0x4  Data  Gb  RTX_Conf_CM.o [1]
+os_tsk                  0x100018ec    0x8  Data  Gb  rt_Task.o [6]
+pca9532_setLeds         0x00004d83   0x30  Code  Gb  pca9532.o [3]
+pend_flags              0x10001aa2    0x1  Data  Lc  rt_System.o [6]
 power_off               0x00001b4f    0x2  Code  Lc  mmc.o [5]
 power_on                0x00001b37   0x18  Code  Lc  mmc.o [5]
+process_master_request  0x00004e7d   0x44  Code  Lc  modbus.o [3]
 put_fat                 0x0000059d  0x122  Code  Gb  ff.o [5]
-range                   0x10000094    0x4  Data  Lc  light.o [3]
+range                   0x100000a8    0x4  Data  Lc  light.o [3]
 rcvr_datablock          0x00001b55   0x66  Code  Lc  mmc.o [5]
 rcvr_spi                0x00001ac9   0x16  Code  Lc  mmc.o [5]
-readControlReg          0x00005595   0x22  Code  Lc  light.o [3]
+readControlReg          0x00004ab5   0x22  Code  Lc  light.o [3]
+register_map            0x10000074    0xc  Data  Lc  main.o [1]
+register_map            0x10001b2c    0x4  Data  Lc  modbus.o [3]
 remove_chain            0x000006bf   0x6a  Code  Lc  ff.o [5]
-res                     0x10001904    0x1  Data  Gb  main.o [1]
-rgb_init                0x00005759   0x4a  Code  Gb  rgb.o [3]
-rt_alloc_box            0x00003b73   0x1a  Code  Gb  rt_MemBox.o [6]
-rt_alloc_mem            0x000030d7   0x48  Code  Gb  rt_Memory.o [6]
-rt_block                0x000031ad   0x2a  Code  Gb  rt_Task.o [6]
-rt_chk_robin            0x00004137   0x3c  Code  Wk  rt_Robin.o [6]
-rt_dec_dly              0x00003caf   0x9c  Code  Gb  rt_List.o [6]
-rt_dispatch             0x0000316f   0x3e  Code  Gb  rt_Task.o [6]
-rt_dly_wait             0x0000026d    0x6  Code  Gb  rt_Time.o [6]
-rt_evt_psh              0x0000396d   0x50  Code  Gb  rt_Event.o [6]
-rt_evt_set              0x000038f5   0x58  Code  Gb  rt_Event.o [6]
-rt_evt_wait             0x000038bd   0x38  Code  Gb  rt_Event.o [6]
-rt_free_box             0x00003b8d   0x28  Code  Gb  rt_MemBox.o [6]
-rt_free_mem             0x0000311f   0x2c  Code  Gb  rt_Memory.o [6]
-rt_get_PSP              0x0000400b         Code  Gb  HAL_CM3.o [6]
-rt_get_first            0x00003bfd   0x2a  Code  Gb  rt_List.o [6]
-rt_init_mem             0x000030bd   0x1a  Code  Gb  rt_Memory.o [6]
-rt_init_robin           0x00004129    0xe  Code  Wk  rt_Robin.o [6]
-rt_init_stack           0x00003f19   0x76  Code  Gb  HAL_CM.o [6]
-rt_mbx_check            0x00003735    0x8  Code  Gb  rt_Mailbox.o [6]
-rt_mbx_init             0x000035e1   0x1a  Code  Gb  rt_Mailbox.o [6]
-rt_mbx_psh              0x00003797   0xd4  Code  Gb  rt_Mailbox.o [6]
-rt_mbx_send             0x000035fb   0x92  Code  Gb  rt_Mailbox.o [6]
-rt_mbx_wait             0x0000368d   0xa8  Code  Gb  rt_Mailbox.o [6]
-rt_ms2tick              0x000027cd   0x3c  Code  Lc  rt_CMSIS.o [6]
-rt_mut_init             0x000039cd   0x10  Code  Gb  rt_Mutex.o [6]
-rt_mut_release          0x000039dd   0xc8  Code  Gb  rt_Mutex.o [6]
-rt_mut_wait             0x00003aa5   0x6e  Code  Gb  rt_Mutex.o [6]
-rt_pop_req              0x00003e17   0x66  Code  Gb  rt_System.o [6]
-rt_psh_req              0x00003e01   0x16  Code  Gb  rt_System.o [6]
-rt_psq_enq              0x00003d97   0x48  Code  Gb  rt_List.o [6]
-rt_put_dly              0x00003c61   0x4e  Code  Gb  rt_List.o [6]
-rt_put_prio             0x00003bc5   0x38  Code  Gb  rt_List.o [6]
-rt_put_rdy_first        0x00003c27    0xe  Code  Gb  rt_List.o [6]
-rt_resort_prio          0x00003c35   0x2c  Code  Gb  rt_List.o [6]
-rt_ret_val              0x00003f8f    0x6  Code  Gb  HAL_CM.o [6]
-rt_ret_val2             0x00003f95    0xa  Code  Gb  HAL_CM.o [6]
-rt_rmv_dly              0x00003d71   0x26  Code  Gb  rt_List.o [6]
-rt_rmv_list             0x00003d4b   0x26  Code  Gb  rt_List.o [6]
-rt_sem_psh              0x000041b5   0x30  Code  Gb  rt_Semaphore.o [6]
-rt_set_PSP              0x00004005         Code  Gb  HAL_CM3.o [6]
-rt_stk_check            0x00003ed1   0x1c  Code  Wk  rt_System.o [6]
-rt_switch_req           0x0000314d   0x22  Code  Gb  rt_Task.o [6]
-rt_sys_init             0x00003469   0xae  Code  Gb  rt_Task.o [6]
-rt_sys_start            0x00003519   0x68  Code  Gb  rt_Task.o [6]
-rt_systick              0x00003e9f   0x32  Code  Gb  rt_System.o [6]
-rt_tsk_create           0x0000325f   0xa4  Code  Gb  rt_Task.o [6]
-rt_tsk_delete           0x00003303  0x160  Code  Gb  rt_Task.o [6]
-rt_tsk_prio             0x000031e9   0x76  Code  Gb  rt_Task.o [6]
-rt_tsk_self             0x000031dd    0xc  Code  Gb  rt_Task.o [6]
-runInitSequence         0x00005143   0xd0  Code  Lc  oled.o [3]
-sample_period           0x10001884    0x4  Data  Gb  main.o [1]
+res                     0x10001b44    0x1  Data  Gb  main.o [1]
+respond_RM_Coil         0x00004ec1   0x9a  Code  Lc  modbus.o [3]
+respond_RM_Reg          0x00004f5b   0xfe  Code  Lc  modbus.o [3]
+respond_WM_Reg          0x000050c5   0xa8  Code  Lc  modbus.o [3]
+respond_WS_Coil         0x00005059   0x6c  Code  Lc  modbus.o [3]
+rgb_init                0x00004c79   0x4a  Code  Gb  rgb.o [3]
+rt_alloc_box            0x00005de7   0x1a  Code  Gb  rt_MemBox.o [6]
+rt_alloc_mem            0x00005203   0x48  Code  Gb  rt_Memory.o [6]
+rt_block                0x000052d9   0x2a  Code  Gb  rt_Task.o [6]
+rt_chk_robin            0x00006483   0x3c  Code  Wk  rt_Robin.o [6]
+rt_dec_dly              0x00005f23   0x9c  Code  Gb  rt_List.o [6]
+rt_dispatch             0x0000529b   0x3e  Code  Gb  rt_Task.o [6]
+rt_dly_wait             0x0000583d    0x6  Code  Gb  rt_Time.o [6]
+rt_evt_psh              0x00005be1   0x50  Code  Gb  rt_Event.o [6]
+rt_evt_set              0x00005b69   0x58  Code  Gb  rt_Event.o [6]
+rt_evt_wait             0x00005b31   0x38  Code  Gb  rt_Event.o [6]
+rt_free_box             0x00005e01   0x28  Code  Gb  rt_MemBox.o [6]
+rt_free_mem             0x0000524b   0x2c  Code  Gb  rt_Memory.o [6]
+rt_get_PSP              0x00006357         Code  Gb  HAL_CM3.o [6]
+rt_get_first            0x00005e71   0x2a  Code  Gb  rt_List.o [6]
+rt_init_mem             0x000051e9   0x1a  Code  Gb  rt_Memory.o [6]
+rt_init_robin           0x00006475    0xe  Code  Wk  rt_Robin.o [6]
+rt_init_stack           0x00006065   0x76  Code  Gb  HAL_CM.o [6]
+rt_mbx_check            0x000059a9    0x8  Code  Gb  rt_Mailbox.o [6]
+rt_mbx_init             0x00005855   0x1a  Code  Gb  rt_Mailbox.o [6]
+rt_mbx_psh              0x00005a0b   0xd4  Code  Gb  rt_Mailbox.o [6]
+rt_mbx_send             0x0000586f   0x92  Code  Gb  rt_Mailbox.o [6]
+rt_mbx_wait             0x00005901   0xa8  Code  Gb  rt_Mailbox.o [6]
+rt_ms2tick              0x000034d5   0x3c  Code  Lc  rt_CMSIS.o [6]
+rt_mut_init             0x00005c41   0x10  Code  Gb  rt_Mutex.o [6]
+rt_mut_release          0x00005c51   0xc8  Code  Gb  rt_Mutex.o [6]
+rt_mut_wait             0x00005d19   0x6e  Code  Gb  rt_Mutex.o [6]
+rt_pop_req              0x00005723   0x66  Code  Gb  rt_System.o [6]
+rt_psh_req              0x0000570d   0x16  Code  Gb  rt_System.o [6]
+rt_psq_enq              0x0000600b   0x48  Code  Gb  rt_List.o [6]
+rt_put_dly              0x00005ed5   0x4e  Code  Gb  rt_List.o [6]
+rt_put_prio             0x00005e39   0x38  Code  Gb  rt_List.o [6]
+rt_put_rdy_first        0x00005e9b    0xe  Code  Gb  rt_List.o [6]
+rt_resort_prio          0x00005ea9   0x2c  Code  Gb  rt_List.o [6]
+rt_ret_val              0x000060db    0x6  Code  Gb  HAL_CM.o [6]
+rt_ret_val2             0x000060e1    0xa  Code  Gb  HAL_CM.o [6]
+rt_rmv_dly              0x00005fe5   0x26  Code  Gb  rt_List.o [6]
+rt_rmv_list             0x00005fbf   0x26  Code  Gb  rt_List.o [6]
+rt_sem_psh              0x000064d1   0x30  Code  Gb  rt_Semaphore.o [6]
+rt_set_PSP              0x00006351         Code  Gb  HAL_CM3.o [6]
+rt_stk_check            0x000057f3   0x1c  Code  Wk  rt_System.o [6]
+rt_switch_req           0x00005279   0x22  Code  Gb  rt_Task.o [6]
+rt_sys_init             0x00005595   0xae  Code  Gb  rt_Task.o [6]
+rt_sys_start            0x00005645   0x68  Code  Gb  rt_Task.o [6]
+rt_systick              0x000057c1   0x32  Code  Gb  rt_System.o [6]
+rt_tsk_create           0x0000538b   0xa4  Code  Gb  rt_Task.o [6]
+rt_tsk_delete           0x0000542f  0x160  Code  Gb  rt_Task.o [6]
+rt_tsk_prio             0x00005315   0x76  Code  Gb  rt_Task.o [6]
+rt_tsk_self             0x00005309    0xc  Code  Gb  rt_Task.o [6]
+runInitSequence         0x00004663   0xd0  Code  Lc  oled.o [3]
+sample_period           0x10001ab8    0x4  Data  Gb  main.o [1]
 select                  0x00001b17   0x20  Code  Lc  mmc.o [5]
 send_cmd                0x00001c17   0x92  Code  Lc  mmc.o [5]
-setLeds                 0x00005803   0x60  Code  Lc  pca9532.o [3]
-setLsStates             0x000057b1   0x52  Code  Lc  pca9532.o [3]
-setModeControl          0x000056c3   0x18  Code  Lc  acc.o [3]
+setLeds                 0x00004d23   0x60  Code  Lc  pca9532.o [3]
+setLsStates             0x00004cd1   0x52  Code  Lc  pca9532.o [3]
+setModeControl          0x00004be3   0x18  Code  Lc  acc.o [3]
 set_clock_fast          0x00001aa1   0x1c  Code  Lc  mmc.o [5]
 set_clock_slow          0x00001a85   0x1c  Code  Lc  mmc.o [5]
-shadowFB                0x10000e38  0x300  Data  Lc  oled.o [3]
-stat                    0x10001903    0x1  Data  Gb  main.o [1]
-svcDelay                0x00002a33   0x12  Code  Gb  rt_CMSIS.o [6]
-svcKernelInitialize     0x00002809   0x60  Code  Gb  rt_CMSIS.o [6]
-svcKernelStart          0x00002869   0x42  Code  Gb  rt_CMSIS.o [6]
-svcMailCreate           0x00002ebb   0x4c  Code  Gb  rt_CMSIS.o [6]
-svcMessageCreate        0x00002d6d   0x26  Code  Gb  rt_CMSIS.o [6]
-svcMessageGet           0x00002dc9   0x38  Code  Gb  rt_CMSIS.o [6]
-svcMessageGet_          0x00002d55   0x18  Code  Gb  rt_CMSIS.o [6]
-svcMessagePut           0x00002d93   0x36  Code  Gb  rt_CMSIS.o [6]
-svcMutexCreate          0x00002c4d   0x1c  Code  Gb  rt_CMSIS.o [6]
-svcMutexRelease         0x00002ca5   0x22  Code  Gb  rt_CMSIS.o [6]
-svcMutexWait            0x00002c69   0x3c  Code  Gb  rt_CMSIS.o [6]
-svcSignalSet            0x00002b51   0x28  Code  Gb  rt_CMSIS.o [6]
-svcSignalWait           0x00002b7f   0x5e  Code  Gb  rt_CMSIS.o [6]
-svcSignalWait_          0x00002b39   0x18  Code  Gb  rt_CMSIS.o [6]
-svcThreadCreate         0x0000293d   0x66  Code  Gb  rt_CMSIS.o [6]
-svcThreadGetId          0x000029a3   0x16  Code  Gb  rt_CMSIS.o [6]
-svcThreadTerminate      0x000029b9   0x3c  Code  Gb  rt_CMSIS.o [6]
-svcTimerCall            0x00002a59   0x18  Code  Gb  rt_CMSIS.o [6]
+shadowFB                0x10000ff0  0x300  Data  Lc  oled.o [3]
+stat                    0x10001b43    0x1  Data  Gb  main.o [1]
+svcDelay                0x00003787   0x12  Code  Gb  rt_CMSIS.o [6]
+svcKernelInitialize     0x00003511   0x60  Code  Gb  rt_CMSIS.o [6]
+svcKernelStart          0x00003571   0x42  Code  Gb  rt_CMSIS.o [6]
+svcKernelSysTick        0x000035b3   0x36  Code  Gb  rt_CMSIS.o [6]
+svcMailCreate           0x00003c1b   0x4c  Code  Gb  rt_CMSIS.o [6]
+svcMessageCreate        0x00003ac9   0x26  Code  Gb  rt_CMSIS.o [6]
+svcMessageGet           0x00003b25   0x38  Code  Gb  rt_CMSIS.o [6]
+svcMessageGet_          0x00003ab1   0x18  Code  Gb  rt_CMSIS.o [6]
+svcMessagePut           0x00003aef   0x36  Code  Gb  rt_CMSIS.o [6]
+svcMutexCreate          0x000039a1   0x1c  Code  Gb  rt_CMSIS.o [6]
+svcMutexRelease         0x000039f9   0x22  Code  Gb  rt_CMSIS.o [6]
+svcMutexWait            0x000039bd   0x3c  Code  Gb  rt_CMSIS.o [6]
+svcSignalSet            0x000038a5   0x28  Code  Gb  rt_CMSIS.o [6]
+svcSignalWait           0x000038d3   0x5e  Code  Gb  rt_CMSIS.o [6]
+svcSignalWait_          0x0000388d   0x18  Code  Gb  rt_CMSIS.o [6]
+svcThreadCreate         0x00003691   0x66  Code  Gb  rt_CMSIS.o [6]
+svcThreadGetId          0x000036f7   0x16  Code  Gb  rt_CMSIS.o [6]
+svcThreadTerminate      0x0000370d   0x3c  Code  Gb  rt_CMSIS.o [6]
+svcTimerCall            0x000037ad   0x18  Code  Gb  rt_CMSIS.o [6]
+switch_lsbmsb           0x00004e6f    0xe  Code  Lc  modbus.o [3]
 sync                    0x000003cd   0xd6  Code  Lc  ff.o [5]
-sysMailAlloc            0x00002f07   0x58  Code  Gb  rt_CMSIS.o [6]
-sysMailFree             0x00002f65   0x64  Code  Gb  rt_CMSIS.o [6]
-sysTimerTick            0x00002a71   0x86  Code  Gb  rt_CMSIS.o [6]
-system_state            0x100000a0    0x1  Data  Gb  main.o [1]
-t_PauseRoutine          0x100018b0    0x4  Data  Gb  main.o [1]
-t_PrintOLED             0x100018a8    0x4  Data  Gb  main.o [1]
-t_PrintSD               0x100018a0    0x4  Data  Gb  main.o [1]
-t_ProcessData           0x100018ac    0x4  Data  Gb  main.o [1]
-t_ReadSensors           0x100018a4    0x4  Data  Gb  main.o [1]
-task_PauseRoutine       0x0000499b   0x5a  Code  Gb  main.o [1]
-task_PrintOLED          0x00004701  0x18a  Code  Gb  main.o [1]
-task_PrintSD            0x0000488b  0x110  Code  Gb  main.o [1]
-task_ProcessData        0x000045e7  0x11a  Code  Gb  main.o [1]
-task_ReadSensors        0x00004555   0x92  Code  Gb  main.o [1]
-tolower                 0x00005ab5   0x14  Code  Gb  tolower.o [7]
-vLine                   0x00005249   0x36  Code  Lc  oled.o [3]
+sysMailAlloc            0x00003c67   0x58  Code  Gb  rt_CMSIS.o [6]
+sysMailFree             0x00003cc5   0x64  Code  Gb  rt_CMSIS.o [6]
+sysTimerTick            0x000037c5   0x86  Code  Gb  rt_CMSIS.o [6]
+system_state            0x100000b4    0x1  Data  Gb  main.o [1]
+t_Modbus                0x10001ae8    0x4  Data  Gb  main.o [1]
+t_PauseRoutine          0x10001ae4    0x4  Data  Gb  main.o [1]
+t_PrintOLED             0x10001adc    0x4  Data  Gb  main.o [1]
+t_PrintSD               0x10001ad4    0x4  Data  Gb  main.o [1]
+t_ProcessData           0x10001ae0    0x4  Data  Gb  main.o [1]
+t_ReadSensors           0x10001ad8    0x4  Data  Gb  main.o [1]
+task_Modbus             0x00003299  0x168  Code  Gb  main.o [1]
+task_PauseRoutine       0x0000321d   0x5a  Code  Gb  main.o [1]
+task_PrintOLED          0x00002ebd  0x1ec  Code  Gb  main.o [1]
+task_PrintSD            0x000030a9  0x174  Code  Gb  main.o [1]
+task_ProcessData        0x00002d0d  0x1b0  Code  Gb  main.o [1]
+task_ReadSensors        0x00002c25   0xe8  Code  Gb  main.o [1]
+ticksfactor             0x00006e90    0x4  Data  Lc  main.o [1]
+tolower                 0x0000651f   0x14  Code  Gb  tolower.o [7]
+uart_buffer             0x10001a58   0x14  Data  Lc  modbus.o [3]
+usMBCRC16               0x00004e39   0x36  Code  Lc  modbus.o [3]
+vLine                   0x00004769   0x36  Code  Lc  oled.o [3]
 validate                0x00000fd1   0x2a  Code  Lc  ff.o [5]
 wait_ready              0x00001adf   0x26  Code  Lc  mmc.o [5]
-width                   0x10000098    0x4  Data  Lc  light.o [3]
-writeCommand            0x000050b1   0x2a  Code  Lc  oled.o [3]
-writeData               0x000050db   0x2a  Code  Lc  oled.o [3]
-writeDataLen            0x00005105   0x3e  Code  Lc  oled.o [3]
-written_bytes           0x1000188c    0x4  Data  Gb  main.o [1]
+width                   0x100000ac    0x4  Data  Lc  light.o [3]
+writeCommand            0x000045d1   0x2a  Code  Lc  oled.o [3]
+writeData               0x000045fb   0x2a  Code  Lc  oled.o [3]
+writeDataLen            0x00004625   0x3e  Code  Lc  oled.o [3]
+written_bytes           0x10001ac0    0x4  Data  Gb  main.o [1]
 xmit_datablock          0x00001bbb   0x5c  Code  Lc  mmc.o [5]
 xmit_spi                0x00001abd    0xc  Code  Lc  mmc.o [5]
 
 
-[1] = D:\UTFPR\Documentos\8º Período\Sistemas Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo - O OUTRO TA BUGADO\LAB04\Examples\Debug\Obj
+[1] = D:\UTFPR\Períodos\8º Período\Sistemas Embarcados\Laboratórios\tarefa04 - datalogger modbus\Codigo\LAB04\Examples\Debug\Obj
 [2] = command line
 [3] = Lib_EaBaseBoard.a
 [4] = Lib_MCU.a
@@ -829,9 +894,9 @@ xmit_spi                0x00001abd    0xc  Code  Lc  mmc.o [5]
 [8] = rt7M_tl.a
 [9] = shb_l.a
 
-  23 502 bytes of readonly  code memory
-   1 474 bytes of readonly  data memory
-   6 532 bytes of readwrite data memory
+  26 300 bytes of readonly  code memory
+   2 240 bytes of readonly  data memory
+   7 112 bytes of readwrite data memory
 
 Errors: none
 Warnings: none
